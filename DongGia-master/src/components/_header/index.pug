@@ -6,19 +6,20 @@ header
 					img(src="./img/logo.png", alt="")
 			.menu-wrapper
 				.sub-menu
-					a(href="#") Customer Support
-					a(href="#") Contact Us
-					a.hotline(href="tel:+84965117114")
+
+					a.hotline(href="tel:+84918 290 028")
 						span.mdi.mdi-phone
-						span +84 965 117 114
-					a.login(href="#")
-						span.mdi.mdi-account-outline
-						span Sign in
+						span 0918 290 028
+					.search
+						.search-toggle
+							span.mdi.mdi-magnify
+						.Module
+							.searchbox
+								input.searchinput(type='text', title='Site Search', autocomplete='off', placeholder='Search terms')
+								button.searchbutton Search
 					.language
-						.current 
-							span.mdi.mdi-web
-							span EN
-							span.mdi.mdi-chevron-down
+						.current
+							span.mdi EN
 						.dropdown
 							a(href="#") EN
 							a(href="#") VN
@@ -27,59 +28,21 @@ header
 						.ModuleContent
 							ul
 								li
-									a(href="about.html") About us
+									a(href="about.html") giới thiệu
 								li
-									a(href="product.html") Shop Online
+									a(href="product.html") năng lực thi công
 								li
-									a(href="collection.html") Glaze Collection
+									a(href="collection.html") dự án
 								li
-									a(href="#") Promotion
+									a(href="#") tin tức - sự kiện
 								li
-									a(href="catalogue.html") e-Catalogue
+									a(href="catalogue.html") hỗ trợ khách hàng
 								li
-									a(href="gallery.html") Gallery
-					.search
-						.search-toggle
-							span.mdi.mdi-magnify
-						.Module
-							.searchbox
-								input.searchinput(type='text', title='Site Search', autocomplete='off', placeholder='Search terms')
-								button.searchbutton Search
-					.cart.Module
-						.ModuleContent
-							.cart-toggle.ml-auto
-								.icon
-									span.mdi.mdi-basket
-								.text
-									span.product-count Cart
-									span.bracket (
-									span.product-count.amount 1
-									span.bracket )
-							.cartpanel
-								.title
-									| Có 1 sản phẩm trong 
-									a(href='cart.html') giỏ hàng
-									| .
-								.btn-closecart
-									span.lnr.lnr-cross
-								.cart-list
-									ul
-										li
-											a.product-img(href='product-detail.html')
-												img.img-fluid(src='./img/product/p_2.png')
-											.product-info
-												h3.product-name
-													a(href='product-detail.html', target='_self') Balo teen Mrvui BLTEEN673
-												.size Màu sắc: Xanh dương
-												.amount 370.000 ₫ x 1
-											.remove-product
-												i.fa.fa-trash-o(aria-hidden='true')
-								.checkout-panel
-									.total
-										| Tạm tính: 
-										strong 370.000 ₫
-									.button
-										a.btn-checkout(href='cart.html') Tiến hành thanh toán
+									a(href="gallery.html") tuyển dụng
+								li
+									a(href="gallery.html") thư viện
+								li
+									a(href="gallery.html") liên hệ
 			.toggle-menu
 				span.mdi.mdi-menu
 	.backdrop
