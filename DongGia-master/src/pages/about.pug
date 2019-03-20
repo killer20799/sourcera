@@ -6,3 +6,57 @@ block var
 	- var bodyClass = "index-page"
 
 block main
+	section.about
+		.module-about
+			.module-title
+				h2 Giới thiệu
+			.container
+				.row
+					.col-lg-6.content
+						.moduleContent
+							p Hành trình 7 năm xây dựng những giá trị sống đích thực:
+							p Công ty TNHH Hoàng Phú Thái thành lập vào năm 2011, không ngừng phát triển trong lĩnh vực đầu tư và xây dựng bất động sản trong nước. Với sứ mệnh phủ sóng các công trình trên cả nước và vươn mình tới các công trình ngoài nước, Hoàng Phú Thái luôn nghiên cứu và áp dụng công nghệ tiên tiến trên thế giới. 
+							br
+							p Để góp một phần quan trọng cho sự nghiệp xây dựng tương lai vững chắc, hơn 100 đội ngũ, chuyên gia không ngừng trau dồi và cải thiện kỹ năng trong ngành. Cam kết mang đến những dịch vụ và công trình đạt hiệu quả tối ưu cho đối tác và khách hàng.
+							.readmore
+								button Xem thêm
+					.col-lg-6.content
+						.module_img
+							img.module_img_a.img-fluid(src="../img/about/about_banner_1.png", alt="", srcset="")
+							img.module_img_b.img-fluid(src="../img/about/about_banner_2.png", alt="", srcset="")
+							img.module_img_c.img-fluid(src="../img/about/about_banner_3.png", alt="", srcset="")
+							img.module_img_d.img-fluid(src="../img/about/about_banner_4.png", alt="", srcset="")
+		.module-seek
+			h2.module-title-banner Tầm nhìn - Sứ mệnh
+			.container
+				.row
+					.col-lg-6.content
+						h3 Tầm nhìn
+						img.img-fluid(src="../img/about/about_icon_1.png", alt="", srcset="")
+						p Là một Tập đoàn xây dựng đẳng cấp quốc tế, vị thế cao, phát triển vững mạnh, góp phần mang lại cuộc sống hạnh phúc và thịnh vượng cho cộng đồng.
+					.col-lg-6.content
+						h3 Sứ mệnh
+						img.img-fluid(src="../img/about/about_icon_2.png", alt="", srcset="")
+						p Chúng tôi phát triển dự án, không chỉ ở những mét vuông xây dựng mà góp phần kiến tạo cộng đồng nhân văn tiên tiến, qua đó tạo nên giá trị sống gia tăng bền vững cho mình và cho xã hội.
+				.row
+					.col.content
+						h3 Giá trị cốt lõi
+						img.img-fluid(src="../img/about/about_icon_3.png", alt="", srcset="")
+						h4 CHÍNH TRỰC - HIỆU QUẢ - CHUYÊN NGHIỆP
+		.module-history
+			h2.module-title Lịch sử phát triển
+			.container
+				.row
+					.col
+						img(src="../img/about/about_intro_1.png", alt="", srcset="")
+						p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit
+						p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+		.module-partner
+			h2.module-title Đối tác - Khách hàng
+			.moduleContent
+				- for (x=1;x<6;x++)
+					.carousel
+						.container
+							.row
+								.col
+									img.box-img.img-fluid(src="../img/about/partner/about_client_"+x+".png", alt="", srcset="")
