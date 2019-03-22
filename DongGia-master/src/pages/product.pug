@@ -6,6 +6,48 @@ block var
 	- var bodyClass = "product-page"
 
 block main
-	include ../components/breadcrumb/index.pug
-	+PageBanner("./img/banner/b_2.jpg")
-	include ../components/product/list.pug
+	section.product
+		h2.moduleTitle Năng lực thi công
+		.module-product
+			.container
+				.row
+					.col.content
+						p Hoàng Phú Gia đã tham gia nhiều công trình xây dựng khắp nước. Chúng tôi đã có nhiều kinh nghiệm xây dựng những công trình có quy mô lớn của các nhà đầu tư nổi tiếng đến từ các quốc gia trên khắc thế giới như Toshiba, Fujitsu, Nippon… của Nhật Bản; Tainan, Pontex, Chang Yih ccura Đài Loan; Hock Hin của Singapore, Công trình United Swimwear của nhà đầu tư HongKong; Sika của Thụy sỹ, Metacor của Canada, Công trình Nhà máy Xử lý rác thải của nhà đầu tư Hoa Kỳ…
+						p Một trong những điểm mạnh của chúng tôi là nhờ những bước chuyển mình mạnh mẽ trong sự phát triển của công nghệ. Hoàng Phú Gia luôn hướng đến những công nghệ mới và tốt nhất để đáp ứng được những yêu cầu đa dạng trong thi công, từ kỹ thuật thi công phức tạp đến năng lực điều hành và thực hiện một công trình có qui mô lớn.
+					.col.module-img
+						img.img-fluid(src="../img/product/certifition.png", alt="", srcset="")
+		.module-project
+			h2.moduleTitle Dự án đã thực hiện
+			.container
+				.row
+					.col.content
+						figure
+							img.img-fluid(src="../img/product/product_project_1.png", alt="", srcset="")
+							figcaption
+								h3 Căn hộ Sunshine Marina Nha Trang Bay
+								i.fas.fa-caret-right
+					.col.content
+						figure
+							img.img-fluid(src="../img/product/product_project_2.png", alt="", srcset="")
+							figcaption
+								h3 Căn hộ Napoleon Castle Nha Trang
+								i.fas.fa-caret-right
+				.row
+					.col.content
+						figure
+							img.img-fluid(src="../img/product/product_project_3.png", alt="", srcset="")
+							figcaption
+								h3 Ocean Hill Village Nha Trang
+								i.fas.fa-caret-right
+					.col.content
+						figure
+							img.img-fluid(src="../img/product/product_project_4.png", alt="", srcset="")
+							figcaption
+								h3 The Silk Path City Phú Quốc
+								i.fas.fa-caret-right
+					.col.content
+						figure
+							img.img-fluid(src="../img/product/product_project_5.png", alt="", srcset="")
+							figcaption
+								h3 Intercontinental Phú Quốc
+								i.fas.fa-caret-right

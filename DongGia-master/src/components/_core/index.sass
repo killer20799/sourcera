@@ -11,27 +11,21 @@ html
 	background-color: #fff
 body
 	margin: 0
+	h2.moduleTitle
+		text-align: center
+		padding-bottom: 3rem
+		font-family: 'Montserrat', sans-serif
+		font-size: 38px
+		font-weight: 600
+		line-height: 38px
+		letter-spacing: 0.95px
+		background-clip: text
+		-webkit-background-clip: text
+		color: transparent
+		background-image: linear-gradient(to right, #9d763d 0%, #d3ae63 100%)
 	//about
 	.about
-		.col
-			padding: 0
-		h2
-			text-align: center
-			padding-bottom: 1rem
-			font-family: 'Montserrat', sans-serif
-			font-size: 38px
-			font-weight: bold
-			line-height: 38px
-			letter-spacing: 0.95px
-			background-clip: text
-			-webkit-background-clip: text
-			color: transparent
-			background-image: linear-gradient(to right, #9d763d 0%, #d3ae63 100%)
 		.module-about
-			.module-title
-				display: flex
-				justify-content: center
-				align-items: center
 			.content
 				.moduleContent
 					padding: 1rem
@@ -60,7 +54,18 @@ body
 						text-transform: uppercase
 				.module_img
 					text-align: center
-					position: relative
+					margin-bottom: 3rem
+			@media (min-width: 992px)
+				display: flex
+				margin-bottom: 5rem
+				.content
+					flex: 0 0 50%
+					.moduleContent
+						text-align: right
+						p
+							font-size: 16px
+					.module_img
+						display: flex
 		.module-seek
 			background: url('../img/about/about_banner_bg.png') center center no-repeat
 			background-size: cover
@@ -76,61 +81,173 @@ body
 				font-size: 30px
 				font-weight: 600
 				line-height: 31px
+			.m-content
+				border-radius: 5px
+				background: rgba(255,255,255,.7)
+				margin: 1rem 0
+				padding: 0
+				.module-Content
+					p
+						padding: .5rem
+						color: #666666
+						font-family: 'Montserrat', sans-serif
+						font-size: 15px
+						font-weight: 400
+						line-height: 23px
+					h3
+						position: relative
+						padding: .5rem 0
+						color: #685c53
+						font-family: 'Montserrat', sans-serif
+						font-size: 24px
+						font-weight: 600
+						line-height: 31px
+						letter-spacing: 0.6px
+						&:before
+							content: ""
+							display: inline-block
+							height: 1px
+							width: 100%
+							background-image: linear-gradient(to top, #9d763d 0%, #d3ae63 100%)
+							position: absolute
+							bottom: 0
+							left: 0
+					h4
+						padding: 0 .5rem 1rem
+						font-family: 'Montserrat', sans-serif
+						font-size: 24px
+						font-weight: 600
+						line-height: 31px
+						letter-spacing: 0.6px
+						text-transform: uppercase
+						background-clip: text
+						-webkit-background-clip: text
+						color: transparent
+						background-image: linear-gradient(to right, #9d763d 0%, #d3ae63 100%)
+				@media (min-width: 768px)
+					flex: 0 0 50%
+					border-radius: 0
+					background: none
+					.module-Content
+						margin-left: .5rem
+						border-radius: 5px
+						background: hsla(0,0%,100%,.7)
+						height: 100%
+			.s-content
+				border-radius: 5px
+				background: rgba(255,255,255,.7)
+				margin: 1rem 0
+				padding: 0
+				.module-Content
+					p
+						padding: .5rem
+						color: #666666
+						font-family: 'Montserrat', sans-serif
+						font-size: 15px
+						font-weight: 400
+						line-height: 23px
+					h3
+						position: relative
+						padding: .5rem 0
+						color: #685c53
+						font-family: 'Montserrat', sans-serif
+						font-size: 24px
+						font-weight: 600
+						line-height: 31px
+						letter-spacing: 0.6px
+						&:before
+							content: ""
+							display: inline-block
+							height: 1px
+							width: 100%
+							background-image: linear-gradient(to top, #9d763d 0%, #d3ae63 100%)
+							position: absolute
+							bottom: 0
+							left: 0
+					h4
+						padding: 0 .5rem 1rem
+						font-family: 'Montserrat', sans-serif
+						font-size: 24px
+						font-weight: 600
+						line-height: 31px
+						letter-spacing: 0.6px
+						text-transform: uppercase
+						background-clip: text
+						-webkit-background-clip: text
+						color: transparent
+						background-image: linear-gradient(to right, #9d763d 0%, #d3ae63 100%)
 			.content
 				border-radius: 5px
 				background: rgba(255,255,255,.7)
 				margin: 1rem 0
 				padding: 0
-				p
-					padding: .5rem
-					color: #666666
-					font-family: 'Montserrat', sans-serif
-					font-size: 15px
-					font-weight: 400
-					line-height: 23px
-				h3
-					position: relative
-					padding: .5rem 0
-					color: #685c53
-					font-family: 'Montserrat', sans-serif
-					font-size: 24px
-					font-weight: 600
-					line-height: 31px
-					letter-spacing: 0.6px
-					&:before
-						content: ""
-						display: inline-block
-						height: 1px
-						width: 100%
-						background-image: linear-gradient(to top, #9d763d 0%, #d3ae63 100%)
-						position: absolute
-						bottom: 0
-						left: 0
-				h4
-					padding: 0 .5rem 1rem
-					font-family: 'Montserrat', sans-serif
-					font-size: 24px
-					font-weight: 600
-					line-height: 31px
-					letter-spacing: 0.6px
-					text-transform: uppercase
-					background-clip: text
-					-webkit-background-clip: text
-					color: transparent
-					background-image: linear-gradient(to right, #9d763d 0%, #d3ae63 100%)
+				.module-Content
+					p
+						padding: .5rem
+						color: #666666
+						font-family: 'Montserrat', sans-serif
+						font-size: 15px
+						font-weight: 400
+						line-height: 23px
+					h3
+						position: relative
+						padding: .5rem 0
+						color: #685c53
+						font-family: 'Montserrat', sans-serif
+						font-size: 24px
+						font-weight: 600
+						line-height: 31px
+						letter-spacing: 0.6px
+						&:before
+							content: ""
+							display: inline-block
+							height: 1px
+							width: 100%
+							background-image: linear-gradient(to top, #9d763d 0%, #d3ae63 100%)
+							position: absolute
+							bottom: 0
+							left: 0
+					h4
+						padding: 0 .5rem 1rem
+						font-family: 'Montserrat', sans-serif
+						font-size: 24px
+						font-weight: 600
+						line-height: 31px
+						letter-spacing: 0.6px
+						text-transform: uppercase
+						background-clip: text
+						-webkit-background-clip: text
+						color: transparent
+						background-image: linear-gradient(to right, #9d763d 0%, #d3ae63 100%)
+				@media (min-width: 768px)
+					flex: 0 0 50%
+					border-radius: 0
+					background: none
+					.module-Content
+						margin-right: .5rem
+						border-radius: 5px
+						background: hsla(0,0%,100%,.7)
+						height: 100%
 		.module-history
 			text-align: center
 			h2
 				padding-top: 3rem
 				padding-bottom: 2rem
-			p
-				color: #666666
-				font-family: 'Montserrat', sans-serif
-				font-size: 16px
-				font-weight: 400
-				line-height: 28px
-				letter-spacing: 0.4px
-				padding: 1rem
+			.content
+				p
+					color: #666666
+					font-family: 'Montserrat', sans-serif
+					font-size: 16px
+					font-weight: 400
+					line-height: 28px
+					letter-spacing: 0.4px
+					padding: 1rem
+			@media (min-width: 992px)
+				.content
+					flex: 0 0 50%
+					text-align: left
+					p
+						padding: 0
 		.module-partner
 			padding: 4rem
 			.moduleContent
@@ -148,6 +265,70 @@ body
 							width: 100%
 							height: 100%
 							display: inline-block
+
+	.product
+		padding-bottom: 5rem
+		.module-product
+			.content
+				p
+					padding: 1rem
+					color: #333333
+					font-family: 'Montserrat', sans-serif
+					font-size: 15px
+					font-weight: 400
+					line-height: 23px
+			.module-img
+				text-align: center
+			@media (min-width: 992px)
+				display: flex
+				.content
+					flex: 0 0 70%
+				.module-img
+					flex: 0 0 30%
+		.module-project
+			text-align: center
+			padding-top: 5rem
+			.content
+				figure
+					margin: 1rem 0
+					position: relative
+					figcaption
+						position: absolute
+						bottom: 0
+						left: 0
+						width: 100%
+						background: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0))
+						padding-bottom: 1rem
+						h3
+							position: relative
+							color: #ffffff
+							font-family: 'Montserrat', sans-serif
+							font-size: 14px
+							font-weight: 600
+							line-height: 18px
+							text-transform: uppercase
+							padding-left: .5rem
+							text-align: left
+							&:before
+								display: inline-block
+								width:95%
+								height: 2px
+								background-color: #e1e1e1
+								content: ""
+								position: absolute
+								bottom: 0
+								left: 50%
+								transform: translateX(-50%)
+								opacity: .7
+							&:after
+								content: "\f0da"
+								font-family: "Font Awesome 5 Free"
+								font-weight: 600
+								color: #ffffff
+								position: absolute
+								top: 0
+								right: .5rem
+
 
 ul
 	list-style-type: none
