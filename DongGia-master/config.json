@@ -10,7 +10,7 @@
 		"./bower_components/swiper/dist/js/swiper.min.js",
 		"./bower_components/isotope-layout/dist/isotope.pkgd.min.js",
 		"./bower_components/bootstrap/dist/js/bootstrap.min.js",
-		"./bower_components/owl.carousel/dist/owl.carousel.min.js"
+		"./src/plugins/pagination.min.js"
 	],
 	"globalCss": [
 		"./bower_components/swiper/dist/css/swiper.min.css",

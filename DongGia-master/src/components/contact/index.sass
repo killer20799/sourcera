@@ -1,0 +1,205 @@
+.contact
+	.box-img
+		padding: 0
+		figure
+			position: relative
+			.img-fluid
+				width: 100%
+			figcaption
+				width: 100%
+				position: absolute
+				left: 50%
+				bottom: -15%
+				transform: translate(-50%, -50%)
+				padding: 0 1rem
+				h3
+					color: #f2f2f2
+					font-family: 'Montserrat', sans-serif
+					font-size: 16px
+					font-weight: 600
+					line-height: 24px
+					text-transform: uppercase
+					text-align: center
+				i
+					padding-left: .5rem
+					display: flex
+					align-items: center
+					color: #bbbbbb
+					p
+						color: #bbbbbb
+						font-family: 'Montserrat', sans-serif
+						font-size: 13px
+						font-weight: 400
+						padding: .5rem
+						padding-left: 1rem
+						font-style: normal
+						a
+							color: #bbbbbb
+							font-style: normal
+				.fa-map-marker-alt
+					&:before
+						padding-left: 2px
+						padding-right: 2px
+						content: "\f3c5"
+						font-family: 'Font Awesome 5 Free'
+						font-weight: 600
+						width: 16px
+						height: 16px
+				.fa-phone
+					&:before
+						content: "\f095"
+						font-family: 'Font Awesome 5 Free'
+						font-weight: 600
+						width: 16px
+						height: 16px
+				.fa-envelope
+					&:before
+						content: "\f0e0"
+						font-family: 'Font Awesome 5 Free'
+						font-weight: 600
+						width: 16px
+						height: 16px
+				.fa-globe-asia
+					&:before
+						content: "\f57e"
+						font-family: 'Font Awesome 5 Free'
+						font-weight: 600
+						width: 16px
+						height: 16px
+	.wrap-form
+		text-align: center
+		padding-bottom: 4rem
+		padding-top: 4rem
+		background-color: #f5f5f5
+		h3
+			color: #474747
+			font-family: 'Montserrat', sans-serif
+			font-size: 18px
+			font-weight: 600
+			line-height: 31px
+			text-transform: uppercase
+			letter-spacing: 0.45px
+		p
+			color: #999999
+			font-family: 'Montserrat', sans-serif
+			font-size: 14px
+			font-weight: 400
+			line-height: 22px
+		.frm-content
+			.input-form
+				padding: .5rem 1rem
+				h4
+					padding-bottom: .5rem
+					color: #666666
+					font-family: 'Montserrat', sans-serif
+					font-size: 14px
+					font-style: italic
+					font-weight: 400
+					line-height: 22px
+					text-align: left
+				.qtext
+					input
+						padding: 0 1rem
+						border-radius: 5px
+						width: 100%
+						height: 45px
+						border: 1px solid #e1e1e1
+						background-color: #f5f5f5
+						outline: none
+						&:focus
+							box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.35)
+							border-radius: 5px
+							border: 1px solid #d36e44
+							background-color: #f5f5f5
+				.qparagraph
+					textarea
+						outline: none
+						width: 100%
+						height: 90px
+						border-radius: 5px
+						border: 1px solid #e1e1e1
+						background-color: #f5f5f5
+						padding: .5rem 1rem
+						&:focus
+							box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.35)
+							border-radius: 5px
+							border: 1px solid #d36e44
+							background-color: #f5f5f5
+		.frm-btnwrap
+			text-align: right
+			padding: .5rem
+			.frm-btn-submit
+				width: 100px
+				height: 45px
+				border-radius: 5px
+				background-color: #f5f5f5
+				background-image: linear-gradient(to right, #9d763d 0%, #d3ae63 100%)
+				border: none
+				outline: none
+				color: #ffffff
+				font-family: 'Montserrat', sans-serif
+				font-size: 15px
+				font-weight: 600
+				line-height: 24px
+				text-transform: uppercase
+				border: none
+				outline: none
+	@media (min-width: 360px)
+		.box-img
+			figure
+				figcaption
+					bottom: -10%
+					padding: 0 2rem
+		.wrap-form
+			.frm-btnwrap
+				text-align: center
+	@media (min-width: 411px)
+		.box-img
+			figure
+				figcaption
+					bottom: 5%
+					padding: 0 2rem
+	@media (min-width: 768px)
+		.box-img
+			flex: 0 0 50%
+			max-width: 50%
+			figure
+				.img-fluid
+					width: auto
+					height: 100%
+				figcaption
+					bottom: 10%
+					padding: 0 1rem
+		.wrap-form
+			padding-top: 2rem
+			padding-bottom: 2rem
+			flex: 0 0 50%
+			min-width: 50%
+			.frm-btnwrap
+				text-align: right
+	@media (min-width: 992px)
+		.box-img
+			flex: 0 0 40%
+			max-width: 40%
+			figure
+				.img-fluid
+					width: 100%
+				figcaption
+					bottom: -10%
+					padding: 0 2rem
+					h3
+						font-size: 18px
+					i
+						p
+							font-size: 14px
+		.wrap-form
+			flex: 0 0 60%
+			max-width: 60%
+	@media (min-width: 1200px)
+		.box-img
+			figure
+				figcaption
+					bottom: 5%
+					padding: 0 2rem
+	.map
+		padding-top: 4rem

@@ -106,8 +106,6 @@ gulp.task('globalCss', function () {
 gulp.task('css', function () {
 	return gulp.src([
 		'./src/components/main.sass',
-		'bower_components/owl.carousel/dist/assets/owl.carousel.min.css',
-		'bower_components/owl.carousel/dist/assets/owl.theme.default.min.css'
 	])
 		.pipe(srcmap.init())
 		.pipe(sass.sync({ fiber: Fiber }).on('error', sass.logError))

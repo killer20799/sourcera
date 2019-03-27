@@ -1,0 +1,50 @@
+.contact
+	h2.moduleTitle Liên hệ
+	.container
+		.row
+			.col.box-img
+				figure
+					img.img-fluid(src="../img/contact/contact_banner.png", alt="", srcset="")
+					figcaption
+						h3 CÔNG TY TNHH hoàng phú thái
+						i.fas.fa-map-marker-alt
+							p BT 06-08 , Đường 28B KĐT Phước Long, P. Phước Long, Tp. Nha Trang, Khánh Hòa.
+						i.fas.fa-phone
+							p
+								a(href="tel:+84918290028") 0918290028
+						i.fas.fa-envelope
+							p
+								a(href="mailto:info@hoangphuthai.vn") info@hoangphuthai.vn
+						i.fas.fa-globe-asia
+							p 
+								a(href="www.hoangphuthai.vn") www.hoangphuthai.vn
+			.col.wrap-form
+				h3 Form liên hệ
+				p Xin vui lòng điền vào form để liên hệ với chúng tôi
+				.frm-content
+					.row
+						.col-md-6.input-form
+							h4 Họ và tên
+							.form-group.qtext
+								input(name="Họ và tên" type="text" spellcheck="false")
+						.col-md-6.input-form
+							h4 Số	 điện thoại
+							.form-group.qtext
+								input(name="Số điện thoại" type="text" spellcheck="false")
+						.col-md-6.input-form
+							h4 Email
+							.form-group.qtext
+								input(name="Email" type="text" spellcheck="false")
+						.col-md-6.input-form
+							h4 Tiêu đề
+							.form-group.qtext
+								input(name="Tiêu đề" type="text" spellcheck="false")
+						.col-lg.input-form
+							h4 Nội dung
+							.form-group.qparagraph
+								textarea(name="Nội dung", cols="30", rows="10")
+				.form-group.frm-btnwrap
+					input(type="submit", value="GỬI" class="btn btn-default frm-btn-submit")
+	.map
+		img.img-fluid(src="../img/contact/contact_location_2.png", alt="", srcset="")
+		img.img-fluid.d-none(src="../img/contact/contact_location_1.png", alt="", srcset="")

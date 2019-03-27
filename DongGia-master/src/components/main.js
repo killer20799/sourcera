@@ -107,7 +107,96 @@ $(document).ready(function () {
 		var target = $(this).attr('href')
 		$(target).fadeIn()
 	})
-
+	// Ability Client
+	var abilityClient = new Swiper('.ability .module-ability .module-img .swiper-container ', {
+		slidesPerView: 1,
+		loop: true,
+		spaceBetween: 0,
+		navigation: {
+			nextEl: '.ability .module-ability .module-img .swiper-button-next',
+			prevEl: '.ability .module-ability .module-img .swiper-button-prev',
+		},
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
+		},
+	})
+	//Projected 
+	var projectedClient = new Swiper('.ability .module-project .module-client .project-client', {
+		slidesPerView: 3,
+		loop: true,
+		spaceBetween: 20,
+		navigation: {
+			nextEl: '.ability .module-project .module-client .swiper-button-next',
+			prevEl: '.ability .module-project .module-client .swiper-button-prev',
+		},
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
+		},
+		breakpoints: {
+			768: {
+				slidesPerView: 1,
+			},
+		}
+	})
+	// About Client
+	var aboutClient = new Swiper('.about .module-partner .partner-client', {
+		slidesPerView: 5,
+		loop: true,
+		spaceBetween: 0,
+		navigation: {
+			nextEl: '.about .module-partner .module-client .swiper-button-next',
+			prevEl: '.about .module-partner .module-client .swiper-button-prev',
+		},
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
+		},
+		breakpoints: {
+			768: {
+				slidesPerView: 3,
+			},
+		}
+	})
+	// Selector Client
+	var aboutClient = new Swiper('.jobs .selector-slide .selector-client', {
+		slidesPerView: 4,
+		loop: true,
+		spaceBetween: 1,
+		navigation: {
+			nextEl: '.jobs .selector .swiper-button-next',
+			prevEl: '.jobs .selector .swiper-button-prev',
+		},
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
+		},
+		breakpoints: {
+			768: {
+				slidesPerView: 1,
+			},
+		}
+	})
+	// New-Event Pagination
+	$('.new-event #pagination-container').pagination({
+		dataSource: [1, 2, 3],
+		totalNumber: 3,
+		pageSize: 1,
+		autoHidePrevious: true,
+		autoHideNext: true,
+		callback: function(news, pagination) {
+			// template method of yourself
+			var html = template(news);
+			dataContainer.html(html);
+		}
+	})
+	// Support Questions
+	$('.support .module-faqs .support-question .faqs').on('click', function () {
+		$('.support .module-faqs .support-question .faqs').toggleClass('active')
+		$(this).toggleClass('active').attr('.answer')
+		console.log('.answer')
+	})
 	// product other slide
 	var productOther = new Swiper('.product-wrapper .product-other .swiper-container', {
 		slidesPerView: 3,
