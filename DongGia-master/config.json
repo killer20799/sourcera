@@ -10,11 +10,12 @@
 		"./bower_components/swiper/dist/js/swiper.min.js",
 		"./bower_components/isotope-layout/dist/isotope.pkgd.min.js",
 		"./bower_components/bootstrap/dist/js/bootstrap.min.js",
-		"./src/plugins/pagination.min.js"
+		"./bower_components/lightgallery/dist/js/lightgallery.min.js"
 	],
 	"globalCss": [
 		"./bower_components/swiper/dist/css/swiper.min.css",
 		"./src/plugins/font.css",
-		"./src/plugins/grid.css"
+		"./src/plugins/grid.css",
+		"bower_components/lightgallery/dist/css/lightgallery.min.css"
 	]
 }

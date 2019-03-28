@@ -1,17 +1,61 @@
-.gallery-nav
-	.container
-		nav
-			a.active(href="#") Workshop
-			a(href="#") Product Concept
 .gallery
-	.container
-		h2.main-title Product Concept
-		.grid
-			.grid-sizer
-			- for(i=1;i<14;i++)
-				.grid-item
-					img(src="./img/gallery/g_"+i+".jpg", alt="")
-		.viewmore
-			a(href="#") 
-				span Viewmore
-				span.lnr.lnr-arrow-down
+	.Module
+		.moduleContent
+			h2.moduleTitle Thư viện
+			.gallery-nav
+				.container
+					ul
+						li.active
+							a(href="#") Thư viện ảnh
+						li
+							a(href="#") Thư viện video
+			.gallery-content
+				.container
+					.row
+						ul.gallery-list
+							li.gallery-item.flex-100(data-src="../img/gallery/gallery_item_1.png")
+								a(href="")
+									img.img-fluid.img-responsive(src="../img/gallery/gallery_item_1.png", alt="", srcset="")
+									.gallery-poster
+										img(src="../img/gallery/popup/popup_icon_L.png", alt="", srcset="")
+							li.gallery-item.flex-50(data-src="../img/gallery/gallery_item_2.png")
+								a(href="" )
+									img.img-fluid.img-responsive(src="../img/gallery/gallery_item_2.png", alt="", srcset="")
+									.gallery-poster
+										img(src="../img/gallery/popup/popup_icon_S.png", alt="", srcset="")
+							li.gallery-item.flex-50(data-src="../img/gallery/gallery_item_3.png")
+								a(href="" )
+									img.img-fluid.img-responsive(src="../img/gallery/gallery_item_3.png", alt="", srcset="")
+									.gallery-poster
+										img(src="../img/gallery/popup/popup_icon_S.png", alt="", srcset="")
+							li.gallery-item.flex-100(data-src="../img/gallery/gallery_item_4.png")
+								a(href="" )
+									img.img-fluid.img-responsive(src="../img/gallery/gallery_item_4.png", alt="", srcset="")
+									.gallery-poster
+										img(src="../img/gallery/popup/popup_icon_L.png", alt="", srcset="")
+						ul.gallery-list
+							li.gallery-item.flex-50(data-src="../img/gallery/gallery_item_5.png")
+								a(href="" )
+									img.img-fluid.img-responsive(src="../img/gallery/gallery_item_5.png", alt="", srcset="")
+									.gallery-poster
+										img(src="../img/gallery/popup/popup_icon_S.png", alt="", srcset="")
+							li.gallery-item.flex-50(data-src="../img/gallery/gallery_item_6.png")
+								a(href="" )
+									img.img-fluid.img-responsive(src="../img/gallery/gallery_item_6.png", alt="", srcset="")
+									.gallery-poster
+										img(src="../img/gallery/popup/popup_icon_S.png", alt="", srcset="")
+							li.gallery-item.flex-100(data-src="../img/gallery/gallery_item_7.png")
+								a(href="" )
+									img.img-fluid.img-responsive(src="../img/gallery/gallery_item_7.png", alt="", srcset="")
+									.gallery-poster
+										img(src="../img/gallery/popup/popup_icon_M.png", alt="", srcset="")
+							li.gallery-item.flex-50(data-src="../img/gallery/gallery_item_8.png")
+								a(href="" )
+									img.img-fluid.img-responsive(src="../img/gallery/gallery_item_8.png", alt="", srcset="")
+									.gallery-poster
+										img(src="../img/gallery/popup/popup_icon_S.png", alt="", srcset="")
+							li.gallery-item.flex-50(data-src="../img/gallery/gallery_item_9.png")
+								a(href="" )
+									img.img-fluid.img-responsive(src="../img/gallery/gallery_item_9.png", alt="", srcset="")
+									.gallery-poster
+										img(src="../img/gallery/popup/popup_icon_S.png", alt="", srcset="")

@@ -178,19 +178,6 @@ $(document).ready(function () {
 			},
 		}
 	})
-	// New-Event Pagination
-	$('.new-event #pagination-container').pagination({
-		dataSource: [1, 2, 3],
-		totalNumber: 3,
-		pageSize: 1,
-		autoHidePrevious: true,
-		autoHideNext: true,
-		callback: function(news, pagination) {
-			// template method of yourself
-			var html = template(news);
-			dataContainer.html(html);
-		}
-	})
 	// Support Questions
 	$('.support .module-faqs .support-question .faqs').on('click', function () {
 		$('.support .module-faqs .support-question .faqs').toggleClass('active')
@@ -213,30 +200,5 @@ $(document).ready(function () {
 			}
 		}
 	})
-	var $isoGrid = $('.gallery .grid').isotope({
-		itemSelector: '.grid-item',
-		percentPosition: true,
-		masonry: {
-			columnWidth: '.grid-sizer',
-			gutter: 0,
-		}
-	})
-	$(window).on('resize', function () {
-		$('.gallery .grid').isotope('shuffle')
-	})
-
-	$('.gallery .viewmore a').on('click', function (e) {
-		e.preventDefault()
-		var url = $(this).attr('href')
-		$.ajax({
-			url: url,
-			data: { isAjax: true },
-			success: function (data) {
-				let newHtml = $($(data).find('.grid').html()).filter('.grid-item')
-				$isoGrid.isotope('insert', newHtml)
-				let newUrl = $($(data).find('.viewmore').html()).attr('href')
-				$('.gallery .viewmore a').attr('href', newUrl)
-			},
-		})
-	})
+	$('.gallery .Module .moduleContent .gallery-list').lightGallery()
 });
