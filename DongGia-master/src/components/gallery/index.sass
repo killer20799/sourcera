@@ -1,98 +1,125 @@
 .gallery
-	padding-bottom: 4rem
-	.Module
-		.moduleContent
-			.gallery-nav
-				ul
-					padding: 0
-					display: flex
-					justify-content: center
-					align-items: center
-					text-align: center
-					flex-direction: row
-					list-style-type: none
-					padding-bottom: 2rem
+	padding-bottom: 60px
+	h2
+		padding-bottom: 45px
+	nav
+		display: flex
+		text-align: center
+		justify-content: center
+		padding: 0
+		padding-bottom: 25px
+		a
+			padding: 0 !important
+			border-radius: 5px 0 0 5px
+			border: 1px solid #eeeeee
+			max-width: 100%
+			width: 160px
+			height: 40px
+			display: flex
+			justify-content: center
+			align-items: center
+			color: #4a4a4a
+			font-family: 'Montserrat', sans-serif
+			font-size: 15px
+			font-weight: 400
+			text-decoration: none
+			&:hover, &.active
+				box-shadow: 0 4px 20px rgba(19, 28, 35, 0.1)
+				border-radius: 0 5px 5px 0
+				background-color: #e1e1e1
+		@media (min-width: 768px)
+			a
+				width: 275px
+	.container
+		display: flex
+		.col-md-6
+			text-align: center
+			.col-12, .col-6
+				position: relative
+				padding-top: 10px
+				padding-bottom: 10px
+				img
 					width: 100%
-					li
-						padding: 0 !important
-						border-radius: 5px 0 0 5px
-						border: 1px solid #eeeeee
-						max-width: 100%
-						width: 160px
-						height: 40px
-						display: flex
-						justify-content: center
-						align-items: center
-						a
-							color: #4a4a4a
-							font-family: 'Montserrat', sans-serif
-							font-size: 15px
-							font-weight: 400
-							text-decoration: none
-						&:hover
-							box-shadow: 0 4px 20px rgba(19, 28, 35, 0.1)
-							border-radius: 0 5px 5px 0
-							background-color: #e1e1e1
-					@media (min-width: 768px)
-						li
-							width: 270px
-			.gallery-content
-				display: flex
-				flex-wrap: wrap
-				.container
-					max-width: 980px
-					.gallery-list
-						display: flex
-						flex-wrap: wrap
-						list-style-type: none
-						padding: 0
-						.gallery-item
-							padding: .5rem
-							position: relative
-							width: 100%
-							.img-fluid
-								width: 100%
-								filter: brightness(0.5)
-							.gallery-poster
-								position: absolute
-								top: 50%
-								left: 50%
-								transform: translate(-50%, -50%)
-							&:hover
-								.img-fluid
-									filter: none
-								.gallery-poster
-									display: none
-						@media (min-width: 768px)
-							.flex-100
-								flex: 0 0 100%
-								max-width: 100%
-							.flex-50
-								flex: 0 0 50%
-								max-width: 50%
-						@media (min-width: 992px)
-							flex: 0 0 50%
-.gallery-page
-	.lg-outer
-		.lg-actions
-			.lg-prev
-				&:after
-					content: "\f060"
-					font-family: "Font Awesome 5 Free"
-					font-weight: 600
-			.lg-next
-				&:before
-					content: "\f061"
-					font-family: "Font Awesome 5 Free"
-					font-weight: 600
-		.lg-toolbar
-			.lg-download
-				&:after
-					content: "\f063"
-					font-family: "Font Awesome 5 Free"
-					font-weight: 600
-			.lg-close
-				&:after
-					content: "\f00d"
-					font-family: "Font Awesome 5 Free"
-					font-weight: 600
+				.gallery-poster
+					position: absolute
+					top: 50%
+					left: 50%
+					transform: translate(-50%, -50%)
+				a
+					.img-filler
+						width: 100%
+						filter: brightness(0.5)
+						.gallery-poster
+							position: absolute
+							top: 50%
+							left: 50%
+							transform: translate(-50%, -50%)
+							z-index: 1
+				&:hover
+					a
+						.img-filler
+							filter: none
+						.gallery-poster
+							display: none
+			@media (min-width: 550px)
+				.col-6
+					flex: 0 0 50%
+					max-width: 50%
+					.gallery-poster
+						img
+							width: 60%
+.lg-outer
+	.lg-toolbar
+		.lg-download
+			&:after
+				content: "\f791"
+				font-family: "Material Design Icons"
+				font-weight: 400
+		.lg-close
+			&:after
+				content: "\f206"
+				font-family: "Material Design Icons"
+				font-weight: 400
+	.lg-actions
+		.lg-prev
+			&:after
+				content: "\fb0e"
+				font-family: "Material Design Icons"
+				font-weight: 400
+		.lg-next
+			&:before
+				content: "\fb10"
+				font-family: "Material Design Icons"
+				font-weight: 400
+
+
+	// .container
+	// 	display: flex
+	// 	justify-content: center
+	// 	.list-item
+	// 		padding: 0
+	// 		display: flex
+	// 		text-align: center
+	// 		flex-direction: column
+	// 		.item
+	// 			position: relative
+	// 			padding: 15px
+	// 			a
+	// 				.img-filler
+	// 					width: 100%
+	// 					filter: brightness(0.5)
+	// 				.gallery-poster
+	// 						position: absolute
+	// 						top: 50%
+	// 						left: 50%
+	// 						transform: translate(-50%, -50%)
+	// 						z-index: 1
+	// 			&:hover
+	// 				a
+	// 					.img-filler
+	// 						filter: none
+	// 					.gallery-poster
+	// 						display: none
+	// 	@media (min-width: 992px)
+	// 		.list-item
+	// 			flex-direction: column

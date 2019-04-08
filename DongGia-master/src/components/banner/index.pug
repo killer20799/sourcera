@@ -1,7 +1,6 @@
-mixin PageBanner(ImageUrl)
-	.page-banner.Module
-		.swiper-container
-			.swiper-wrapper
+.banner
+	.swiper-container
+		.swiper-wrapper
+			- for (x = 1; x < 7; x++)
 				.swiper-slide
-					a(href="#")
-						img(src=ImageUrl, alt="")
+					img(src="../img/banner/b-"+x+".png", alt="")

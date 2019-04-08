@@ -1,0 +1,366 @@
+.home-banner
+	background: url('../img/home/home_banner.png')
+	background-size: cover
+	background-repeat: none
+	background-position: center
+	text-align: center
+	padding-top: 60px
+	@media (min-width: 992px)
+		padding-bottom: 80px
+	.col-3
+		.box-img
+			display: inline-block
+			position: relative
+			padding: 20px
+			border: 7px solid #f6be4d
+			border-radius: 50%
+		p
+			font-size: 18px
+			font-family: 'Montserrat', sans-serif
+			color: rgb(255, 255, 255)
+			text-transform: uppercase
+			line-height: 1.556
+			padding-top: 20px
+			padding-bottom: 60px
+		@media (min-width: 768px)
+			flex: 0 0 50%
+			max-width: 50%
+		@media (min-width: 992px)
+			flex: 0 0 25%
+			max-width: 25%
+			p
+				padding-bottom: 0
+.home-news
+	padding-bottom: 0
+	margin-bottom: 60px
+	.container
+		position: relative
+		h2.moduleTitle
+			padding-top: 0
+		.btn-group
+			.swiper-button-next
+				transform: translate(20%,50%)
+				outline: none
+				background-image: none
+				width: 20px
+				height: 20px
+				position: absolute
+				top: auto
+				bottom: -3%
+				right: auto
+				left: 50%
+				display: flex
+				justify-content: center
+				align-items: center
+				border-radius: 5px
+				border: 1px solid #f5b535
+				padding: 1rem
+				background: #f5b535
+				.fa-chevron-right
+					outline: none
+					font-style: normal
+					background-clip: text
+					-webkit-background-clip: text
+					color: transparent
+					background-image: linear-gradient(to right, #9d763d 0%, #d3ae63 100%)
+					&:before
+						color: #000
+						content: "\f054"
+						font-family: 'Font Awesome 5 Free'
+						font-weight: 600
+			.swiper-button-prev
+				transform: translate(10%,50%)
+				outline: none
+				background-image: none
+				width: 20px
+				height: 20px
+				position: absolute
+				bottom: -3%
+				top: auto
+				right: 51%
+				left: auto
+				display: flex
+				justify-content: center
+				align-items: center
+				border-radius: 5px
+				border: 1px solid #f5b535
+				padding: 1rem
+				background: #f5b535
+				.fa-chevron-left
+					outline: none
+					font-style: normal
+					background-clip: text
+					-webkit-background-clip: text
+					color: transparent
+					background-image: linear-gradient(to right, #9d763d 0%, #d3ae63 100%)
+					&:before
+						color: #000
+						content: "\f053"
+						font-family: 'Font Awesome 5 Free'
+						font-weight: 600
+		@media (min-width: 768px)
+			.btn-group
+				.swiper-button-next
+					transform: translate(-27%,50%)
+					outline: none
+					right: 0
+					bottom: auto
+					top: 18%
+					left: auto
+					background-image: none
+					background: #ffffff
+					border-color: rgba(19, 28, 35, 0.1)
+				.swiper-button-prev
+					transform: translate(-27%,50%)
+					outline: none
+					left: auto
+					background-image: none
+					bottom: auto
+					top: 18%
+					right: 6%
+					background: #ffffff
+					border-color: rgba(19, 28, 35, 0.1)
+		@media (min-width: 900px)
+			.btn-group
+				.swiper-button-prev
+					right: 5%
+		@media (min-width: 1200px)
+			.btn-group
+				.swiper-button-prev
+					right: 4%
+		@media (min-width: 1440px)
+			.btn-group
+				.swiper-button-prev
+					top: 17%
+				.swiper-button-next
+					top: 17%
+		h2
+			padding-bottom: 35px
+		nav
+			padding: 0
+			display: flex
+			justify-content: center
+			align-items: center
+			text-align: center
+			flex-direction: row
+			list-style-type: none
+			padding-bottom: 40px
+			width: 100%
+			a
+				padding: 0 !important
+				color: #4a4a4a
+				font-family: 'Montserrat', sans-serif
+				font-size: 15px
+				font-weight: 400
+				border-radius: 5px 0 0 5px
+				border: 1px solid #eeeeee
+				max-width: 100%
+				width: 160px
+				height: 40px
+				display: flex
+				justify-content: center
+				align-items: center
+				text-decoration: none
+				&:hover, &.active
+					box-shadow: 0 4px 20px rgba(19, 28, 35, 0.1)
+					border-radius: 0 5px 5px 0
+					background-color: #e1e1e1
+			@media (min-width: 768px)
+				a
+					width: 270px
+		.box-content
+			text-align: center
+			width: 100%
+			figure
+				position: relative
+				img
+					width: 100%
+				figcaption
+					text-align: left
+					p
+						color: #404040
+						font-family: 'Montserrat', sans-serif
+						font-size: 14px
+						font-weight: 400
+						line-height: 22px
+						display: inline-block
+						padding-top: 15px !important
+						padding-bottom: 25px !important
+	@media (min-width: 512px)
+		padding-bottom: 30px
+.popular-project
+	padding-bottom: 80px
+	position: relative
+	h2.moduleTitle
+		padding-top: 2px
+	.container
+		.btn-group
+			.swiper-button-next
+				transform: translate(20%,50%)
+				outline: none
+				background-image: none
+				width: 20px
+				height: 20px
+				position: absolute
+				top: auto
+				bottom: -3%
+				right: auto
+				left: 50%
+				display: flex
+				justify-content: center
+				align-items: center
+				border-radius: 5px
+				border: 1px solid #f5b535
+				padding: 1rem
+				background: #f5b535
+				.fa-chevron-right
+					outline: none
+					font-style: normal
+					background-clip: text
+					-webkit-background-clip: text
+					color: transparent
+					background-image: linear-gradient(to right, #9d763d 0%, #d3ae63 100%)
+					&:before
+						color: #000
+						content: "\f054"
+						font-family: 'Font Awesome 5 Free'
+						font-weight: 600
+			.swiper-button-prev
+				transform: translate(20%,50%)
+				outline: none
+				background-image: none
+				width: 20px
+				height: 20px
+				position: absolute
+				bottom: -3%
+				top: auto
+				right: 51%
+				left: auto
+				display: flex
+				justify-content: center
+				align-items: center
+				border-radius: 5px
+				border: 1px solid #f5b535
+				padding: 1rem
+				background: #f5b535
+				.fa-chevron-left
+					outline: none
+					font-style: normal
+					background-clip: text
+					-webkit-background-clip: text
+					color: transparent
+					background-image: linear-gradient(to right, #9d763d 0%, #d3ae63 100%)
+					&:before
+						color: #000
+						content: "\f053"
+						font-family: 'Font Awesome 5 Free'
+						font-weight: 600
+		@media (min-width: 768px)
+			.btn-group
+				.swiper-button-next
+					transform: translate(-27%,50%)
+					outline: none
+					right: 0
+					bottom: auto
+					top: 1%
+					left: auto
+					background-image: none
+					background: #ffffff
+					border-color: rgba(19, 28, 35, 0.1)
+				.swiper-button-prev
+					transform: translate(-27%,50%)
+					outline: none
+					left: auto
+					background-image: none
+					bottom: auto
+					top: 1%
+					right: 6%
+					background: #ffffff
+					border-color: rgba(19, 28, 35, 0.1)
+		@media (min-width: 900px)
+			.btn-group
+				.swiper-button-prev
+					right: 5%
+		@media (min-width: 1200px)
+			.btn-group
+				.swiper-button-prev
+					right: 4%
+	@media (min-width: 768px)
+		padding-bottom: 0
+	.container
+		position: relative
+		.swiper-container
+			.swiper-wrapper
+				.swiper-slide
+					.row
+						.col-6,.col-4
+							figure
+								position: relative
+								margin: 15px
+								img
+									width: 100%
+								figcaption
+									position: absolute
+									bottom: 0
+									width: 100%
+									padding-left: 10px
+									padding-right: 20px
+									background: linear-gradient(transparent,rgba(0,0,0,.8))
+									p
+										position: relative
+										border-bottom: 1px solid rgb(225, 225, 225)
+										margin-bottom: 20px
+										span
+											font-size: 12px
+											font-family: 'Montserrat', sans-serif
+											text-transform: uppercase
+											color: rgb(255, 255, 255)
+											line-height: 1.2
+											text-align: left
+										.fa-caret-right
+											position: absolute
+											right: 0
+											display: inline-flex
+											align-items: flex-end
+											transform: translateY(50%)
+											&:before
+												content: "\f0da"
+												font-family: "Font Awesome 5 Free"
+												font-weight: 600
+		
+			@media (min-width: 512px)
+				.swiper-wrapper
+					.swiper-slide
+						.row
+							display: flex
+							justify-content: center
+							.col-6
+								figure
+									margin: 15px 0
+									figcaption
+										p
+											text-align: left
+											span
+												font-size: 14px
+							.col-4
+								flex: 0 0 50%
+								max-width: 50%
+								figure
+									margin: 15px 0
+									figcaption
+										p
+											text-align: left
+											span
+												font-size: 14px
+			@media (min-width: 768px)
+				.swiper-wrapper
+					.swiper-slide
+						.row
+							.col-6
+								flex: 0 0 50%
+								max-width: 50%
+								padding: 0 15px
+							.col-4
+								flex: 0 0 33.3333%
+								max-width: 33.3333%
+								padding: 0 15px

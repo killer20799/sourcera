@@ -1,61 +1,62 @@
-.gallery
-	.Module
-		.moduleContent
-			h2.moduleTitle Thư viện
-			.gallery-nav
-				.container
-					ul
-						li.active
-							a(href="#") Thư viện ảnh
-						li
-							a(href="#") Thư viện video
-			.gallery-content
-				.container
-					.row
-						ul.gallery-list
-							li.gallery-item.flex-100(data-src="../img/gallery/gallery_item_1.png")
-								a(href="")
-									img.img-fluid.img-responsive(src="../img/gallery/gallery_item_1.png", alt="", srcset="")
-									.gallery-poster
-										img(src="../img/gallery/popup/popup_icon_L.png", alt="", srcset="")
-							li.gallery-item.flex-50(data-src="../img/gallery/gallery_item_2.png")
-								a(href="" )
-									img.img-fluid.img-responsive(src="../img/gallery/gallery_item_2.png", alt="", srcset="")
-									.gallery-poster
-										img(src="../img/gallery/popup/popup_icon_S.png", alt="", srcset="")
-							li.gallery-item.flex-50(data-src="../img/gallery/gallery_item_3.png")
-								a(href="" )
-									img.img-fluid.img-responsive(src="../img/gallery/gallery_item_3.png", alt="", srcset="")
-									.gallery-poster
-										img(src="../img/gallery/popup/popup_icon_S.png", alt="", srcset="")
-							li.gallery-item.flex-100(data-src="../img/gallery/gallery_item_4.png")
-								a(href="" )
-									img.img-fluid.img-responsive(src="../img/gallery/gallery_item_4.png", alt="", srcset="")
-									.gallery-poster
-										img(src="../img/gallery/popup/popup_icon_L.png", alt="", srcset="")
-						ul.gallery-list
-							li.gallery-item.flex-50(data-src="../img/gallery/gallery_item_5.png")
-								a(href="" )
-									img.img-fluid.img-responsive(src="../img/gallery/gallery_item_5.png", alt="", srcset="")
-									.gallery-poster
-										img(src="../img/gallery/popup/popup_icon_S.png", alt="", srcset="")
-							li.gallery-item.flex-50(data-src="../img/gallery/gallery_item_6.png")
-								a(href="" )
-									img.img-fluid.img-responsive(src="../img/gallery/gallery_item_6.png", alt="", srcset="")
-									.gallery-poster
-										img(src="../img/gallery/popup/popup_icon_S.png", alt="", srcset="")
-							li.gallery-item.flex-100(data-src="../img/gallery/gallery_item_7.png")
-								a(href="" )
-									img.img-fluid.img-responsive(src="../img/gallery/gallery_item_7.png", alt="", srcset="")
-									.gallery-poster
-										img(src="../img/gallery/popup/popup_icon_M.png", alt="", srcset="")
-							li.gallery-item.flex-50(data-src="../img/gallery/gallery_item_8.png")
-								a(href="" )
-									img.img-fluid.img-responsive(src="../img/gallery/gallery_item_8.png", alt="", srcset="")
-									.gallery-poster
-										img(src="../img/gallery/popup/popup_icon_S.png", alt="", srcset="")
-							li.gallery-item.flex-50(data-src="../img/gallery/gallery_item_9.png")
-								a(href="" )
-									img.img-fluid.img-responsive(src="../img/gallery/gallery_item_9.png", alt="", srcset="")
-									.gallery-poster
-										img(src="../img/gallery/popup/popup_icon_S.png", alt="", srcset="")
+section.gallery
+	.container
+		.row
+			.col-12
+				h2.moduleTitle Thư viện
+				nav
+					a(href="") Thư viện ảnh
+					a(href="") Thư viện video
+			.col-md-6
+				.row
+					.col-12.item
+						a(href="./img/gallery/gallery_item_1.png")
+							.img-filler
+								img(src="./img/gallery/gallery_item_1.png")
+							.gallery-poster
+								img(src="./img/gallery/popup/popup_icon_L.png")
+				.row
+					.col-6.item
+						a(href="./img/gallery/gallery_item_2.png" )
+							img.img-filler(src="./img/gallery/gallery_item_2.png")
+							.gallery-poster
+								img(src="./img/gallery/popup/popup_icon_L.png")
+					.col-6.item
+						a(href="./img/gallery/gallery_item_3.png")
+							img.img-filler(src="./img/gallery/gallery_item_3.png")
+							.gallery-poster
+								img(src="./img/gallery/popup/popup_icon_L.png")
+				.row
+					.col-12.item
+						a(href="./img/gallery/gallery_item_4.png")
+							img.img-filler(src="./img/gallery/gallery_item_4.png")
+							.gallery-poster
+								img(src="./img/gallery/popup/popup_icon_L.png")
+			.col-md-6
+				.row
+					.col-6.item
+						a(href="./img/gallery/gallery_item_5.png")
+							img.img-filler(src="./img/gallery/gallery_item_5.png")
+							.gallery-poster
+								img(src="./img/gallery/popup/popup_icon_L.png")
+					.col-6.item
+						a(href="./img/gallery/gallery_item_6.png" )
+							img.img-filler(src="./img/gallery/gallery_item_6.png")
+							.gallery-poster
+								img(src="./img/gallery/popup/popup_icon_L.png")
+				.row
+					.col-12.item
+						a(href="./img/gallery/gallery_item_7.png")
+							img.img-filler(src="./img/gallery/gallery_item_7.png")
+							.gallery-poster
+								img(src="./img/gallery/popup/popup_icon_L.png")
+				.row
+					.col-6.item
+						a(href="./img/gallery/gallery_item_8.png")
+							img.img-filler(src="./img/gallery/gallery_item_8.png")
+							.gallery-poster
+								img(src="./img/gallery/popup/popup_icon_L.png")
+					.col-6.item
+						a(href="./img/gallery/gallery_item_9.png" )
+							img.img-filler(src="./img/gallery/gallery_item_9.png")
+							.gallery-poster
+								img(src="./img/gallery/popup/popup_icon_L.png")

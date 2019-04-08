@@ -107,28 +107,65 @@ $(document).ready(function () {
 		var target = $(this).attr('href')
 		$(target).fadeIn()
 	})
-	// Ability Client
-	var abilityClient = new Swiper('.ability .module-ability .module-img .swiper-container ', {
+	//Home news Client
+	var otherNewClient = new Swiper('.home-news .swiper-container', {
+		slidesPerView: 3,
+		loop: true,
+		speed: 1000,
+		spaceBetween: 20,
+		navigation: {
+			nextEl: '.home-news .btn-group .swiper-button-next',
+			prevEl: '.home-news .btn-group .swiper-button-prev',
+		},
+
+		breakpoints: {
+			768: {
+				slidesPerView: 2,
+			},
+			512: {
+				slidesPerView: 1,
+			}
+		}
+	})
+	// Home Client
+	var aboutClient = new Swiper('.popular-project .swiper-container', {
 		slidesPerView: 1,
 		loop: true,
-		spaceBetween: 0,
+		spaceBetween: 20,
+		speed: 1000,
 		navigation: {
-			nextEl: '.ability .module-ability .module-img .swiper-button-next',
-			prevEl: '.ability .module-ability .module-img .swiper-button-prev',
+			nextEl: '.popular-project .btn-group .swiper-button-next',
+			prevEl: '.popular-project .btn-group .swiper-button-prev',
 		},
 		autoplay: {
 			delay: 3000,
 			disableOnInteraction: false,
 		},
 	})
-	//Projected 
-	var projectedClient = new Swiper('.ability .module-project .module-client .project-client', {
+	// Ability Client
+	var abilityClient = new Swiper('.ability .col-4 .swiper-container ', {
+		slidesPerView: 1,
+		loop: true,
+		spaceBetween: 0,
+		speed: 1000,
+		navigation: {
+			nextEl: '.ability .col-4 .swiper-button-next',
+			prevEl: '.ability .col-4 .swiper-button-prev',
+		},
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
+		},
+	})
+	// Other-News Detail
+	var otherNewClient = new Swiper('.otherNews .swiper-container', {
 		slidesPerView: 3,
 		loop: true,
-		spaceBetween: 20,
+		speed: 1000,
+		spaceBetween: 22,
 		navigation: {
-			nextEl: '.ability .module-project .module-client .swiper-button-next',
-			prevEl: '.ability .module-project .module-client .swiper-button-prev',
+			nextEl: '.otherNews .btn-group .swiper-button-next',
+			prevEl: '.otherNews .btn-group .swiper-button-prev',
 		},
 		autoplay: {
 			delay: 3000,
@@ -136,18 +173,68 @@ $(document).ready(function () {
 		},
 		breakpoints: {
 			768: {
-				slidesPerView: 1,
+				slidesPerView: 2,
 			},
+			512: {
+				slidesPerView: 1,
+			}
+		}
+	})
+	//Projected 
+	var projectedClient = new Swiper('.projected .swiper-container', {
+		slidesPerView: 3,
+		loop: true,
+		speed: 1000,
+		spaceBetween: 22,
+		navigation: {
+			nextEl: '.projected .btn-group .swiper-button-next',
+			prevEl: '.projected .btn-group .swiper-button-prev',
+		},
+		autoplay: {
+			delay: 5000,
+			disableOnInteraction: false,
+		},
+		breakpoints: {
+			768: {
+				slidesPerView: 2,
+			},
+			512: {
+				slidesPerView: 1,
+			}
+		}
+	})
+	// Other project
+	var projectedClient = new Swiper('.other-project .swiper-container', {
+		slidesPerView: 3,
+		loop: true,
+		speed: 1000,
+		spaceBetween: 22,
+		navigation: {
+			nextEl: '.other-project .btn-group .swiper-button-next',
+			prevEl: '.other-project .btn-group .swiper-button-prev',
+		},
+		autoplay: {
+			delay: 5000,
+			disableOnInteraction: false,
+		},
+		breakpoints: {
+			768: {
+				slidesPerView: 2,
+			},
+			512: {
+				slidesPerView: 1,
+			}
 		}
 	})
 	// About Client
-	var aboutClient = new Swiper('.about .module-partner .partner-client', {
+	var aboutClient = new Swiper('.module-partner .swiper-container', {
 		slidesPerView: 5,
 		loop: true,
+		speed: 500,
 		spaceBetween: 0,
 		navigation: {
-			nextEl: '.about .module-partner .module-client .swiper-button-next',
-			prevEl: '.about .module-partner .module-client .swiper-button-prev',
+			nextEl: '.module-partner .btn-group .swiper-button-next',
+			prevEl: '.module-partner .btn-group .swiper-button-prev',
 		},
 		autoplay: {
 			delay: 3000,
@@ -160,45 +247,58 @@ $(document).ready(function () {
 		}
 	})
 	// Selector Client
-	var aboutClient = new Swiper('.jobs .selector-slide .selector-client', {
+	var aboutClient = new Swiper('.other .swiper-container', {
 		slidesPerView: 4,
 		loop: true,
 		spaceBetween: 1,
+		speed: 1000,
 		navigation: {
-			nextEl: '.jobs .selector .swiper-button-next',
-			prevEl: '.jobs .selector .swiper-button-prev',
+			nextEl: '.other .swiper-button-next',
+			prevEl: '.other .swiper-button-prev',
 		},
 		autoplay: {
 			delay: 3000,
 			disableOnInteraction: false,
 		},
 		breakpoints: {
-			768: {
-				slidesPerView: 1,
+			992: {
+				slidesPerView: 2,
 			},
 		}
 	})
 	// Support Questions
+	$('.support .module-faqs .support-question .faqs').removeClass('active')
 	$('.support .module-faqs .support-question .faqs').on('click', function () {
-		$('.support .module-faqs .support-question .faqs').toggleClass('active')
-		$(this).toggleClass('active').attr('.answer')
-		console.log('.answer')
+		$(this).find
+
 	})
-	// product other slide
-	var productOther = new Swiper('.product-wrapper .product-other .swiper-container', {
-		slidesPerView: 3,
+	//News button
+	$('.new-event nav').removeClass('active')
+	$('.new-event nav').on('click', function () {
+		$('.new-event nav').removeClass('active')
+		$(this).toggleClass('active')
+	})
+	// Gallery button
+	$('.gallery nav').removeClass('active')
+	$('.gallery nav').on('click', function () {
+		$('.gallery nav').removeClass('active')
+		$(this).toggleClass('active')
+	})
+	// Home Banner
+	var bannerClient = new Swiper('.banner-home .swiper-container', {
+		freeMode: true,
+		freeModeSticky: true,
+		slidesPerView: 1,
+		spaceBetween: 0,
 		loop: true,
 		speed: 1000,
-		spaceBetween: 20,
-		autoplay: {
-			delay: 3000,
-			disableOnInteraction: false,
+		pagination: {
+			el: '.banner-home .swiper-pagination',
+			clickable: true,
+			renderBullet: function (index, className) {
+				return '<span class="' + className + '">' + '0' + (index + 1) + '</span>';
+			},
 		},
-		breakpoints: {
-			768: {
-				slidesPerView: 2,
-			}
-		}
 	})
-	$('.gallery .Module .moduleContent .gallery-list').lightGallery()
+	$('.gallery .item').lightGallery();
 });

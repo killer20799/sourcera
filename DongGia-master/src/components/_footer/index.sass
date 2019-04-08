@@ -4,17 +4,17 @@ footer
 	.container
 		position: relative
 	.top
-		padding-top: 48px
+		padding-top: 60px
 		padding-bottom: 48px
 		border-bottom: 1px solid #d8d8d9
 	.module-title
 		font-size: 14px
 		font-family: 'Montserrat', sans-serif
 		color: rgb(242, 242, 242)
-		font-weight: 600
+		font-weight: 400
 		text-transform: uppercase
 		line-height: 1.714
-		margin-bottom: 16px
+		margin-bottom: 20px
 	.blank
 		&:before
 			content: ""
@@ -53,32 +53,62 @@ footer
 			font-weight: 600
 			width: 16px
 			height: 16px
-	p
-		padding: .5rem 0 .5rem 1rem
-	p, a
-		color: #bbbbbb
-		font-family: 'Montserrat', sans-serif
-		font-size: 14px
-		font-weight: 400
-		line-height: 28px
-		font-style: initial
-		text-align: left
-	a:hover
-		color: #f5b535
-		text-decoration: none
 	.nav
 		nav
 			display: flex
 			flex-direction: column
-			color: #bbbbbb
-			font-family: Roboto
-			font-size: 14px
-			font-weight: 300
-			line-height: 32px
-			text-transform: uppercase
+			a
+				color: #bbbbbb
+				font-family: 'Montserrat', sans-serif
+				font-size: 14px
+				font-weight: 400
+				line-height: 14px
+				padding-bottom: 20px
+				text-transform: uppercase
+				&:hover
+						color: #f5b535
+						text-decoration: none
 	.no-gutters
+		h2
+			padding-top: 0
 		.address
 			padding-right: 20px
+			p
+				display: flex
+				.fas
+					display: inline-block
+					color: #ffffff
+					margin-right: 20px
+					font-size: 16px
+				span:not(.fas)
+					line-height: 1.714
+					color: rgb(187, 187, 187)
+					font-family: 'Montserrat', sans-serif
+					font-weight: 400
+					line-height: 1.714
+					font-size: 14px
+					padding-bottom: 5px
+					font-style: normal
+					&:hover
+						color: #f5b535
+						text-decoration: none
+				a
+					font-size: 14px
+					font-family: 'Montserrat', sans-serif
+					line-height: 2
+					font-weight: 400
+					color: rgb(187, 187, 187)
+					font-style: normal
+					padding-bottom: 5px
+					&:hover
+						color: #f5b535
+						text-decoration: none
+		@media (min-width: 1200px)
+			.address
+				padding-right: 43px
+		@media (min-width: 1400px)
+			.address
+				padding-right: 83px
 	.receive-news
 		p
 			text-transform: none
@@ -131,31 +161,40 @@ footer
 	.copyright
 		justify-content: center
 		padding-top: 10px
-		padding-bottom: 145px
+		padding-bottom: 60px
 		text-align: center
-		p
-			float: left
-			padding-left: 0
-		.Module
-			nav
-				ul
-					display: flex
-					padding: .5rem 0
-					height: 44px
-					justify-content: flex-end
-					align-items: center
-					li
-						border-radius: 100%
-						line-height: 30px
-						height: 25px
-						width: 25px
-						display: flex
-						justify-content: center
-						align-items: center
-						background: #404040
-						margin-left: .5rem
-						a
-							text-decoration: none
+		position: relative
+		width: 100%
+		margin: 0
+		h4
+			color: rgb(187, 187, 187)
+			position: absolute
+			left: 0
+			padding-top: 15px
+			font-size: 12px
+			font-family: 'Montserrat', sans-serif
+			text-transform: uppercase
+			line-height: 2.083
+			font-weight: 400
+		.Social-icons
+			display: flex
+			justify-content: flex-end
+			align-items: center
+			position: absolute
+			right: 0
+			padding-top: 10px
+			padding-right: 0
+			a
+				border-radius: 100%
+				line-height: 30px
+				height: 30px
+				width: 30px
+				display: flex
+				justify-content: center
+				align-items: center
+				background: #404040
+				margin-left: .5rem
+				text-decoration: none
 	@media (max-width: 991.9px)
 		.copyright
 			p,a
@@ -172,6 +211,14 @@ footer
 				justify-content: center
 				display: flex
 		.copyright
+			padding-top: 30px
+			padding-bottom: 40px
+			h4
+				position: initial
+			.Social-icons
+				position: initial
+				display: flex
+				justify-content: center
 			p,a
 				font-size: 12px
 		.no-gutters
