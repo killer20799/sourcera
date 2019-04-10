@@ -107,6 +107,12 @@ $(document).ready(function () {
 		var target = $(this).attr('href')
 		$(target).fadeIn()
 	})
+	// FAQS support
+	let tabsItem = $('.support .faqs')
+	tabsItem.on('click', function () {
+		tabsItem.removeClass('active')
+		$(this).addClass('active') // this of tabsItem
+	})
 	//Home news Client
 	var otherNewClient = new Swiper('.home-news .swiper-container', {
 		slidesPerView: 3,
