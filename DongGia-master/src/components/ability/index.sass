@@ -117,6 +117,7 @@
 							content: "\f061"
 							font-family: "Font Awesome 5 Free"
 							font-weight: 600
+							color: #f6be4d
 				.swiper-button-prev
 					transform: translateX(-50%)
 					left: -2%
@@ -137,6 +138,7 @@
 							content: "\f060"
 							font-family: "Font Awesome 5 Free"
 							font-weight: 600
+							color: #f6be4d
 	@media (min-width: 1200px)
 		.container
 			display: flex
@@ -168,14 +170,11 @@
 					.fa-chevron-right
 						outline: none
 						font-style: normal
-						background-clip: text
-						-webkit-background-clip: text
-						color: transparent
-						background-image: linear-gradient(to right, #9d763d 0%, #d3ae63 100%)
 						&:before
 							content: "\f061"
 							font-family: "Font Awesome 5 Free"
 							font-weight: 600
+							color: #f6be4d
 				.swiper-button-prev
 					transform: translateX(-50%)
 					left: 0
@@ -196,6 +195,7 @@
 							content: "\f060"
 							font-family: "Font Awesome 5 Free"
 							font-weight: 600
+							color: #f6be4d
 .projected
 	text-align: center
 	position: relative
@@ -220,7 +220,7 @@
 				top: auto
 				bottom: 5%
 				right: auto
-				left: 50%
+				left: 51%
 				display: flex
 				justify-content: center
 				align-items: center
@@ -273,6 +273,9 @@
 					background-image: none
 					background: #ffffff
 					border-color: rgba(19, 28, 35, 0.1)
+					.fa-chevron-right
+						&:before
+							color: #000
 				.swiper-button-prev
 					transform: translate(-27%,50%)
 					outline: none
@@ -283,6 +286,9 @@
 					right: 6%
 					background: #ffffff
 					border-color: rgba(19, 28, 35, 0.1)
+					.fa-chevron-left
+						&:before
+							color: #000
 		@media (min-width: 900px)
 			.btn-group
 				.swiper-button-prev

@@ -412,7 +412,7 @@
 			top: auto
 			bottom: -13%
 			right: auto
-			left: 50%
+			left: 51%
 			display: flex
 			justify-content: center
 			align-items: center
@@ -426,12 +426,8 @@
 			.fa-chevron-right
 				outline: none
 				font-style: normal
-				background-clip: text
-				-webkit-background-clip: text
-				color: transparent
-				background-image: linear-gradient(to right, #9d763d 0%, #d3ae63 100%)
 				&:before
-					color: #000
+					color: #fff
 					content: "\f054"
 					font-family: 'Font Awesome 5 Free'
 					font-weight: 600
@@ -458,12 +454,8 @@
 			.fa-chevron-left
 				outline: none
 				font-style: normal
-				background-clip: text
-				-webkit-background-clip: text
-				color: transparent
-				background-image: linear-gradient(to right, #9d763d 0%, #d3ae63 100%)
 				&:before
-					color: #000
+					color: #fff
 					content: "\f053"
 					font-family: 'Font Awesome 5 Free'
 					font-weight: 600
@@ -479,6 +471,9 @@
 				background-image: none
 				background: #ffffff
 				border-color: rgba(19, 28, 35, 0.1)
+				.fa-chevron-right
+					&:before
+						color: #000
 			.swiper-button-prev
 				outline: none
 				transform: translate(-60%,-50%)
@@ -489,6 +484,9 @@
 				right: 4%
 				background: #ffffff
 				border-color: rgba(19, 28, 35, 0.1)
+				.fa-chevron-left
+					&:before
+						color: #000
 	@media (min-width: 1200px)
 		.container
 			.swiper-button-prev

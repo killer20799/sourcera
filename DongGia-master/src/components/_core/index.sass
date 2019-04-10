@@ -56,10 +56,6 @@ body
 				.fa-chevron-right
 					outline: none
 					font-style: normal
-					background-clip: text
-					-webkit-background-clip: text
-					color: transparent
-					background-image: linear-gradient(to right, #9d763d 0%, #d3ae63 100%)
 					&:before
 						color: #000
 						content: "\f054"
@@ -85,10 +81,6 @@ body
 				.fa-chevron-left
 					outline: none
 					font-style: normal
-					background-clip: text
-					-webkit-background-clip: text
-					color: transparent
-					background-image: linear-gradient(to right, #9d763d 0%, #d3ae63 100%)
 					&:before
 						color: #000
 						content: "\f053"
@@ -105,6 +97,9 @@ body
 					background-image: none
 					background: #ffffff
 					border-color: rgba(19, 28, 35, 0.1)
+					.fa-chevron-right
+						&:before
+							color: #000
 				.swiper-button-prev
 					outline: none
 					left: auto
@@ -114,6 +109,9 @@ body
 					right: 4%
 					background: #ffffff
 					border-color: rgba(19, 28, 35, 0.1)
+					.fa-chevron-left
+						&:before
+							color: #000
 	//about
 	.about
 		h2
@@ -420,16 +418,15 @@ body
 				padding-bottom: 20px
 			.btn-group
 				.swiper-button-next
-					transform: translate(20%,50%)
 					outline: none
 					background-image: none
 					width: 20px
 					height: 20px
 					position: absolute
 					top: auto
-					bottom: -17%
+					bottom: -25%
 					right: auto
-					left: 50%
+					left: 51%
 					display: flex
 					justify-content: center
 					align-items: center
@@ -450,13 +447,12 @@ body
 							font-family: 'Font Awesome 5 Free'
 							font-weight: 600
 				.swiper-button-prev
-					transform: translate(10%,50%)
 					outline: none
 					background-image: none
 					width: 20px
 					height: 20px
 					position: absolute
-					bottom: -17%
+					bottom: -25%
 					top: auto
 					right: 51%
 					left: auto
@@ -491,8 +487,9 @@ body
 						background-image: none
 						background: #ffffff
 						border-color: rgba(19, 28, 35, 0.1)
-						&:before
-							color: #000
+						.fa-chevron-right
+							&:before
+								color: #000
 					.swiper-button-prev
 						transform: translate(-27%,50%)
 						outline: none
@@ -503,8 +500,9 @@ body
 						right: 6%
 						background: #ffffff
 						border-color: rgba(19, 28, 35, 0.1)
-						&:before
-							color: #000
+						.fa-chevron-left
+							&:before
+								color: #000
 			@media (min-width: 900px)
 				.btn-group
 					.swiper-button-prev
