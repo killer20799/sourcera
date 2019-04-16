@@ -69,11 +69,11 @@ $(document).ready(function () {
 	})
 
 	// Product toggle menu
-	$('.product-category .nav-item').on('click', function () {
+	$('.toggle-menu').on('click', function () {
 		$(this).toggleClass('active')
 		$(this).find('.dropdown').fadeToggle()
-		$('.product-category .nav-item').not(this).removeClass('active')
-		$('.product-category .nav-item').not(this).find('.dropdown').hide()
+		$('.toggle-menu').not(this).removeClass('active')
+		$('.toggle-menu').not(this).find('.dropdown').hide()
 	})
 
 	// Product image slide
@@ -108,16 +108,25 @@ $(document).ready(function () {
 		$(target).fadeIn()
 	})
 	// FAQS support
-	let tabsItem = $('.support .faqs')
-	tabsItem.on('click', function () {
-		tabsItem.removeClass('active')
-		$(this).addClass('active') // this of tabsItem
+	// let tabsItem = $('.support .faqs')
+	// tabsItem.on('click', function () {
+	// 	tabsItem.removeClass('active')
+	// 	$(this).addClass('active') // this of tabsItem
+	let contentDropdown = $('.support .faqs .question')
+	contentDropdown.on('click', function () {
+		if ($(this).next().is(':hidden') === true) {
+			$(this).next().slideDown('slow')
+			$(this).addClass('active')
+		} else {
+			$(this).next().slideUp('slow')
+			$(this).removeClass('active')
+		}
 	})
 	//Home news Client
 	var otherNewClient = new Swiper('.home-news .swiper-container', {
 		slidesPerView: 3,
 		loop: true,
-		speed: 1000,
+		speed: 1200,
 		spaceBetween: 20,
 		navigation: {
 			nextEl: '.home-news .btn-group .swiper-button-next',
@@ -128,7 +137,7 @@ $(document).ready(function () {
 			768: {
 				slidesPerView: 2,
 			},
-			512: {
+			576: {
 				slidesPerView: 1,
 			}
 		}
@@ -138,7 +147,7 @@ $(document).ready(function () {
 		slidesPerView: 1,
 		loop: true,
 		spaceBetween: 20,
-		speed: 1000,
+		speed: 1200,
 		navigation: {
 			nextEl: '.popular-project .btn-group .swiper-button-next',
 			prevEl: '.popular-project .btn-group .swiper-button-prev',
@@ -153,7 +162,7 @@ $(document).ready(function () {
 		slidesPerView: 1,
 		loop: true,
 		spaceBetween: 0,
-		speed: 1000,
+		speed: 1200,
 		navigation: {
 			nextEl: '.ability .col-4 .swiper-button-next',
 			prevEl: '.ability .col-4 .swiper-button-prev',
@@ -167,7 +176,7 @@ $(document).ready(function () {
 	var otherNewClient = new Swiper('.otherNews .swiper-container', {
 		slidesPerView: 3,
 		loop: true,
-		speed: 1000,
+		speed: 1200,
 		spaceBetween: 22,
 		navigation: {
 			nextEl: '.otherNews .btn-group .swiper-button-next',
@@ -181,7 +190,7 @@ $(document).ready(function () {
 			768: {
 				slidesPerView: 2,
 			},
-			512: {
+			576: {
 				slidesPerView: 1,
 			}
 		}
@@ -190,7 +199,7 @@ $(document).ready(function () {
 	var projectedClient = new Swiper('.projected .swiper-container', {
 		slidesPerView: 3,
 		loop: true,
-		speed: 1000,
+		speed: 1200,
 		spaceBetween: 22,
 		navigation: {
 			nextEl: '.projected .btn-group .swiper-button-next',
@@ -204,7 +213,7 @@ $(document).ready(function () {
 			768: {
 				slidesPerView: 2,
 			},
-			512: {
+			576: {
 				slidesPerView: 1,
 			}
 		}
@@ -213,7 +222,7 @@ $(document).ready(function () {
 	var projectedClient = new Swiper('.other-project .swiper-container', {
 		slidesPerView: 3,
 		loop: true,
-		speed: 1000,
+		speed: 1200,
 		spaceBetween: 22,
 		navigation: {
 			nextEl: '.other-project .btn-group .swiper-button-next',
@@ -227,7 +236,7 @@ $(document).ready(function () {
 			768: {
 				slidesPerView: 2,
 			},
-			512: {
+			576: {
 				slidesPerView: 1,
 			}
 		}
@@ -236,7 +245,7 @@ $(document).ready(function () {
 	var aboutClient = new Swiper('.module-partner .swiper-container', {
 		slidesPerView: 5,
 		loop: true,
-		speed: 500,
+		speed: 2000,
 		spaceBetween: 0,
 		navigation: {
 			nextEl: '.module-partner .btn-group .swiper-button-next',
@@ -257,7 +266,7 @@ $(document).ready(function () {
 		slidesPerView: 4,
 		loop: true,
 		spaceBetween: 1,
-		speed: 1000,
+		speed: 2000,
 		navigation: {
 			nextEl: '.other .swiper-button-next',
 			prevEl: '.other .swiper-button-prev',
@@ -270,6 +279,9 @@ $(document).ready(function () {
 			992: {
 				slidesPerView: 2,
 			},
+			576: {
+				slidesPerView: 1,
+			}
 		}
 	})
 	// Support Questions

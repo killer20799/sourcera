@@ -1,39 +1,40 @@
-.breadcrumb-wrapper
-	background: map-get($mau, mau-1)
+.main-banner
+	position: relative
+	.banner-item
+		img
+			width: 100%
+			max-height: 500px
 	.breadcrumb
+		position: absolute
+		bottom: 0
+		left: 0
 		width: 100%
-		padding-right: 10px
-		padding-left: 10px
-		margin-right: auto
-		margin-left: auto
-		padding: 5px 10px
-		list-style-type: none
-		@media (min-width: 992px)
-			padding: 13px 10px
-			max-width: 960px
-		@media (min-width: 1200px)
-			max-width: 1140px
-		@media (min-width: 1440px)
-			max-width: 1260px
-		li
-			display: inline-flex
-			a
-				font-size: 15px
-				color: darken(white,40%)
-			+ li
-				&:before
-					content: '/'
-					padding: 0 8px
-					color: darken(white,40%)
-			&:hover
+		height: 40px
+		background: rgba(64, 64, 64, 0.502)
+		display: flex
+		align-items: center
+		ul
+			padding: 0
+			margin: 0
+			list-style-type: none
+			display: flex
+			color: #fff
+			align-items: center
+			li
 				a
-					color: map-get($mau, main)
 					text-decoration: none
-			&:first-child
-				a
-					span
-						font-size: 0
+					color: #ffffff
+					&:before
+						content: "\f2dc"
+						font-family: "Material Design Icons"
+						font-weight: 400
+				&:not(.mdi-home):before
+					padding: 0 10px
+					content: "\f13e"
+					font-family: "Material Design Icons"
+					font-weight: 400
+				&:not(.mdi-home)
+					a
+						font-size: 14px
 						&:before
-							font-size: 15px
-							content: '\e800'
-							font-family: 'Linearicons-Free'
+							display: none
