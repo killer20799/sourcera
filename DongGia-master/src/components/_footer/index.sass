@@ -184,17 +184,22 @@ footer
 			right: 0
 			padding-top: 10px
 			padding-right: 0
-			a
-				border-radius: 100%
-				line-height: 30px
-				height: 30px
-				width: 30px
+			.ModuleContent
 				display: flex
-				justify-content: center
-				align-items: center
-				background: #404040
-				margin-left: .5rem
-				text-decoration: none
+				a
+					border-radius: 100%
+					line-height: 30px
+					height: 30px
+					width: 30px
+					display: flex
+					justify-content: center
+					align-items: center
+					background: #404040
+					color: #bbb
+					margin-left: .5rem
+					text-decoration: none
+					&:hover
+						color: #fff
 	@media (max-width: 991.9px)
 		.copyright
 			p,a

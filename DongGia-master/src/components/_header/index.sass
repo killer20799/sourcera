@@ -6,7 +6,6 @@ header
 	transition: all .3s ease-out
 	background-color: #404040
 	z-index: 99
-	position: relative
 	&.fixed
 		position: fixed
 	.backdrop
@@ -39,52 +38,53 @@ header
 		margin-bottom: 8px
 		*
 			color: darken(white,40%)
-		>a
-			display: flex
-			align-items: center
-			justify-content: center
-			text-decoration: none
-			padding: 0 8px
-			background-image: linear-gradient(0deg,#f5b535 40%,#e4c06a)
-			border-radius: 3px
-			width: 184px
-			height: 30px
-			span
-				display: inline-block
-				color: #ffffff !important
-				font-family: Montserrat
-				font-size: 16px
-				font-weight: 700
-			.mdi
-				display: inline-block
-				color: #ffffff
-				font-family: "Material Icons"
-				font-size: 18px
-				font-weight: 400
-				letter-spacing: -0.18px
-			&.login,&.hotline,&.welcome,&.logout
-				.mdi
-					margin-right: 7px
-			&.hotline
-				span:not(.mdi)
+		.ModuleContent
+			>a
+				display: flex
+				align-items: center
+				justify-content: center
+				text-decoration: none
+				padding: 0 8px
+				background-image: linear-gradient(0deg,#f5b535 40%,#e4c06a)
+				border-radius: 3px
+				width: 184px
+				height: 30px
+				span
+					display: inline-block
+					color: #ffffff !important
+					font-family: Montserrat
+					font-size: 16px
 					font-weight: 700
-					color: lighten(black, 33%)
-			@media (min-width: 992px)
-				&:not(:first-child)
-					position: relative
-					&:before
-						content: ''
-						position: absolute
-						height: 14px
-						width: 1px
-						background: darken(white,40%)
-						top: 50%
-						left: 0
-						transform: translateY(-50%)
-				&:hover
-					color: map-get($mau, hover)
+				.mdi
+					display: inline-block
+					color: #ffffff
+					font-family: "Material Icons"
+					font-size: 18px
+					font-weight: 400
+					letter-spacing: -0.18px
+				&.login,&.hotline,&.welcome,&.logout
+					.mdi
+						margin-right: 7px
+				&.hotline
 					span:not(.mdi)
+						font-weight: 700
+						color: lighten(black, 33%)
+				@media (min-width: 992px)
+					&:not(:first-child)
+						position: relative
+						&:before
+							content: ''
+							position: absolute
+							height: 14px
+							width: 1px
+							background: darken(white,40%)
+							top: 50%
+							left: 0
+							transform: translateY(-50%)
+					&:hover
 						color: map-get($mau, hover)
+						span:not(.mdi)
+							color: map-get($mau, hover)
 		.language
 			position: relative
 			margin-left: 10px
@@ -97,6 +97,7 @@ header
 				justify-content: center
 				align-items: center
 				cursor: pointer
+				color: #fff
 				.mdi
 					color: #fff
 				.mdi-web
@@ -201,28 +202,29 @@ header
 		margin-top: .8rem
 		.ModuleContent
 			background: #404040
-			ul
-				display: flex
-				font-size: 15px
-				font-weight: 500
-				text-transform: uppercase
-				justify-content: space-between
-				list-style-type: none
-				padding: 0
-				li
-					flex-grow: auto
-					a
-						color: #e1e1e1
-						font-family: "Montserrat - Medium"
-						letter-spacing: -0.28px
-						font-size: 14px
-						font-weight: 500
-						line-height: 20px
-						text-transform: uppercase
-						text-decoration: none
-					&:hover
+			.Module
+				ul
+					display: flex
+					font-size: 15px
+					font-weight: 500
+					text-transform: uppercase
+					justify-content: space-between
+					list-style-type: none
+					padding: 0
+					li
+						flex-grow: auto
 						a
-							color: #f5b535
+							color: #e1e1e1
+							font-family: "Montserrat - Medium"
+							letter-spacing: -0.28px
+							font-size: 14px
+							font-weight: 500
+							line-height: 20px
+							text-transform: uppercase
+							text-decoration: none
+						&:hover
+							a
+								color: #f5b535
 	.toggle-menu
 		display: none
 		cursor: pointer
@@ -283,10 +285,11 @@ header
 			transition: all .3s ease-out
 			&.active
 				transform: translateX(0)
-				>a
-					height: 55px
-					span:not(.mdi)
-						display: none
+				.ModuleContent
+					>a
+						height: 55px
+						span:not(.mdi)
+							display: none
 			.search
 				height: 45px
 				width: 100%
@@ -294,27 +297,31 @@ header
 				.search-toggle
 					width: 100%
 					height: 100% !important
-			>a
-				height: 55px
+			.hotline
 				width: 100%
-				padding: 8px
-				border-bottom: 1px solid white
-				text-align: center
-				flex-wrap: wrap
-				justify-content: center
-				color: white
-				span:not(.mdi), &.hotline span:not(.mdi)
-					color: white
+				.ModuleContent
 					width: 100%
-				span:not(.mdi)
-					display: none
-				&.hotline, &.login
-					.mdi
-						margin-right: 0
+					>a
+						height: 55px
+						width: 100%
+						padding: 8px
+						border-bottom: 1px solid white
+						text-align: center
+						flex-wrap: wrap
+						justify-content: center
 						color: white
-						font-size: 24px
-					span:not(.mdi)
-						font-weight: 400
+						span:not(.mdi), &.hotline span:not(.mdi)
+							color: white
+							width: 100%
+						span:not(.mdi)
+							display: none
+						&.hotline, &.login
+							.mdi
+								margin-right: 0
+								color: white
+								font-size: 24px
+							span:not(.mdi)
+								font-weight: 400
 			.language
 				width: 100%
 				height: 45px
@@ -331,6 +338,8 @@ header
 					left: 0
 					top: 45px
 					width: 100%
+					&.active
+						z-index: 99
 					a
 						height: 35px
 						width: 100%
@@ -354,16 +363,17 @@ header
 				transform: translateX(0)
 			.ModuleContent
 				height: inherit
-				ul
-					padding-left: 15px
-					padding-top: 15px
-					padding-bottom: 15px
-					// height: inherit
-					flex-direction: column
-					justify-content: unset
-					font-size: 15px
-					padding-right: 105px
-					li
-						a
-							color: white
-							line-height: 40px
+				.Module
+					ul
+						padding-left: 15px
+						padding-top: 15px
+						padding-bottom: 15px
+						// height: inherit
+						flex-direction: column
+						justify-content: unset
+						font-size: 15px
+						padding-right: 105px
+						li
+							a
+								color: white
+								line-height: 40px
