@@ -318,5 +318,5 @@ $(document).ready(function () {
 			},
 		},
 	})
-	$('.gallery .item').lightGallery();
+	$('.gallery .item .imgbox').lightGallery();
 });

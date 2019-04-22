@@ -1,73 +1,99 @@
 .gallery
 	padding-bottom: 60px
-	h2
-		padding-bottom: 45px
-	nav
-		display: flex
-		text-align: center
-		justify-content: center
-		padding: 0
-		padding-bottom: 25px
-		a
-			padding: 0 !important
-			border-radius: 5px 0 0 5px
-			border: 1px solid #eeeeee
-			max-width: 100%
-			width: 160px
-			height: 40px
-			display: flex
-			justify-content: center
-			align-items: center
-			color: #4a4a4a
-			font-family: 'Montserrat', sans-serif
-			font-size: 15px
-			font-weight: 400
-			text-decoration: none
-			&:hover, &.active
-				box-shadow: 0 4px 20px rgba(19, 28, 35, 0.1)
-				border-radius: 0 5px 5px 0
-				background-color: #e1e1e1
-		@media (min-width: 768px)
-			a
-				width: 275px
+	&.lg-on
+		.container
+			.item
+				figure
+					.popup-icon
+						display: none
 	.container
-		display: flex
-		.col-md-6
-			text-align: center
-			.col-12, .col-6
-				position: relative
-				padding-top: 10px
-				padding-bottom: 10px
-				img
-					width: 100%
-				.gallery-poster
-					position: absolute
-					top: 50%
-					left: 50%
-					transform: translate(-50%, -50%)
+		display: inherit !important
+		.row
+			width: 100%
+			.Module
+				width: 100%
+			h2
+				padding-bottom: 45px
+				padding-top: 0
+				text-align: center
+				padding-bottom: 35px
+				font-size: 38px
+				font-weight: 600
+				line-height: 38px
+				letter-spacing: 0.95px
+				background-clip: text
+				-webkit-background-clip: text
+				color: transparent
+				background-image: linear-gradient(to right, #9d763d 0%, #d3ae63 100%)
+				@media (max-width: 991.98px)
+					font-size: 35px
+				@media (max-width: 767.98px)
+					font-size: 33px
+				@media (max-width: 575.98px)
+					font-size: 30px
+			nav
+				display: flex
+				text-align: center
+				justify-content: center
+				padding: 0
+				padding-bottom: 25px
 				a
-					.img-filler
-						width: 100%
-						filter: brightness(0.5)
-						.gallery-poster
-							position: absolute
-							top: 50%
-							left: 50%
-							transform: translate(-50%, -50%)
-							z-index: 1
-				&:hover
+					padding: 0 !important
+					border-radius: 5px 0 0 5px
+					border: 1px solid #eeeeee
+					max-width: 100%
+					width: 160px
+					height: 40px
+					display: flex
+					justify-content: center
+					align-items: center
+					color: #4a4a4a
+					font-size: 15px
+					font-weight: 400
+					text-decoration: none
+					&:hover, &.active
+						box-shadow: 0 4px 20px rgba(19, 28, 35, 0.1)
+						border-radius: 0 5px 5px 0
+						background-color: #e1e1e1
+				@media (min-width: 768px)
 					a
-						.img-filler
-							filter: none
-						.gallery-poster
-							display: none
-			@media (min-width: 550px)
-				.col-6
-					flex: 0 0 50%
-					max-width: 50%
-					.gallery-poster
+						width: 275px
+	.container
+		.row
+			margin: 0
+			.item
+				figure
+					position: relative
+					padding-top: 15px
+					padding-bottom: 15px
+					img
+						width: 100%
+					.popup-icon
+						position: absolute
+						top: 50%
+						left: 50%
+						transform: translate(-50%, -50%)
+					a
 						img
-							width: 60%
+							width: 100%
+							filter: brightness(0.5)
+					.popup-icon
+						position: absolute
+						top: 50%
+						left: 50%
+						transform: translate(-50%, -50%)
+						z-index: 1
+					&:hover
+						a
+							img
+								filter: brightness(1)
+						.popup-icon
+							display: none
+			.col-lg-6
+				padding: 0
+				.col, .col-md-6
+					padding-right: 15px
+					padding-left: 15px
 .lg-outer
 	.lg-toolbar
 		.lg-download
