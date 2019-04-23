@@ -210,7 +210,6 @@ header
 					text-transform: uppercase
 					justify-content: space-between
 					list-style-type: none
-					padding: 0
 					li
 						flex-grow: auto
 						a
@@ -222,6 +221,9 @@ header
 							line-height: 20px
 							text-transform: uppercase
 							text-decoration: none
+						@media (max-width: 1199.98px)
+							a
+								font-size: 12px
 						&:hover
 							a
 								color: #f5b535
@@ -262,6 +264,10 @@ header
 			line-height: 35px
 		.row.no-gutters
 			align-items: center
+			.ModuleContent
+				a
+					img
+						width: 50%
 		.search
 			height: 35px
 			.searchbox
