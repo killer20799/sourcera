@@ -21,7 +21,7 @@
 			<xsl:text disable-output-escaping="yes">&lt;div class="col-md-6"&gt;</xsl:text>
 		</xsl:if>
 		<xsl:if test="position()=4">
-			<xsl:text disable-output-escaping="yes">&lt;div class="col"&gt;</xsl:text>
+			<xsl:text disable-output-escaping="yes">&lt;div class="col resized"&gt;</xsl:text>
 		</xsl:if>
 		
 		<xsl:if test="position()=5">
@@ -45,19 +45,21 @@
 
 		<div class="item">
 			<figure>
-				<a>
-					<xsl:attribute name="href">
-						<xsl:value-of select="ImageUrl"></xsl:value-of>
-					</xsl:attribute>
-					<img>
-					<xsl:attribute name="src">
-						<xsl:value-of select="ImageUrl"></xsl:value-of>
-					</xsl:attribute>
-					<xsl:attribute name="alt">
-						<xsl:value-of select="Title"></xsl:value-of>
-					</xsl:attribute>
-					</img>
-				</a>
+				<div class="imgbox">
+					<a>
+						<xsl:attribute name="href">
+							<xsl:value-of select="ImageUrl"></xsl:value-of>
+						</xsl:attribute>
+						<img>
+						<xsl:attribute name="src">
+							<xsl:value-of select="ImageUrl"></xsl:value-of>
+						</xsl:attribute>
+						<xsl:attribute name="alt">
+							<xsl:value-of select="Title"></xsl:value-of>
+						</xsl:attribute>
+						</img>
+					</a>
+				</div>
 				<div class="popup-icon">
 					<img src="/Data/Sites/1/skins/default/img/gallery/popup/popup_icon_L.png" />
 				</div>

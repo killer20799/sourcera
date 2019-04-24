@@ -73,16 +73,11 @@
 						top: 50%
 						left: 50%
 						transform: translate(-50%, -50%)
+						z-index: 1
 					a
 						img
 							width: 100%
 							filter: brightness(0.5)
-					.popup-icon
-						position: absolute
-						top: 50%
-						left: 50%
-						transform: translate(-50%, -50%)
-						z-index: 1
 					&:hover
 						a
 							img
@@ -94,6 +89,36 @@
 				.col, .col-md-6
 					padding-right: 15px
 					padding-left: 15px
+				.col
+					.item
+						figure
+							.imgbox
+								a
+									img
+										height: 590px
+							.popup-icon
+								img
+									height: auto
+				.resized
+					.item
+						figure
+							.imgbox
+								a
+									img
+										height: 280px
+							.popup-icon
+								img
+									width: 80%
+				.col-md-6
+					.item
+						figure
+							.imgbox
+								a
+									img
+										height: 280px
+							.popup-icon
+								img
+									width: 80%
 .lg-outer
 	.lg-toolbar
 		.lg-download

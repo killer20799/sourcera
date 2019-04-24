@@ -10,7 +10,7 @@
 					<xsl:value-of select="/NewsList/ZoneTitle"></xsl:value-of>
 				</span>
 			</h1>
-			<xsl:apply-templates select="/NewsList/News"><x/sl:apply-templates>
+			<xsl:apply-templates select="/NewsList/News"></sl:apply-templates>
 		</div>
 	</xsl:template>
 
