@@ -4,9 +4,11 @@
 	<xsl:output method="html" indent="yes" />
 
 	<xsl:template match="/">
-
-		<xsl:apply-templates select="/NewsList/News"></xsl:apply-templates>
-
+		<div class="container">
+			<div class="row">
+				<xsl:apply-templates select="/NewsList/News"></xsl:apply-templates>
+			</div>
+		</div>
 	</xsl:template>
 
 	<xsl:template match="News">
@@ -33,7 +35,7 @@
 					<figcaption>
 						<p>
 							<strong>
-								<xsl:value-of select="BriefContent" disable-output-escaping="yes"></xsl:value-of>
+								[<xsl:value-of select="BriefContent" disable-output-escaping="yes"></xsl:value-of>]
 							</strong>
 							<xsl:value-of select="BriefContent" disable-output-escaping="yes"></xsl:value-of>
 						</p>

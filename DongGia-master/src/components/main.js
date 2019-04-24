@@ -108,18 +108,14 @@ $(document).ready(function () {
 		$(target).fadeIn()
 	})
 	// FAQS support
-	// let tabsItem = $('.support .faqs')
-	// tabsItem.on('click', function () {
-	// 	tabsItem.removeClass('active')
-	// 	$(this).addClass('active') // this of tabsItem
 	let contentDropdown = $('.support .faqs .question')
 	contentDropdown.on('click', function () {
 		if ($(this).next().is(':hidden') === true) {
 			$(this).next().slideDown('slow')
-			$(this).addClass('active')
+			$(this).parents('.faqs').addClass('active')
 		} else {
 			$(this).next().slideUp('slow')
-			$(this).removeClass('active')
+			$(this).parents('.faqs').removeClass('active')
 		}
 	})
 	//Home news Client
@@ -285,11 +281,6 @@ $(document).ready(function () {
 		}
 	})
 	// Support Questions
-	$('.support .module-faqs .support-question .faqs').removeClass('active')
-	$('.support .module-faqs .support-question .faqs').on('click', function () {
-		$(this).find
-
-	})
 	//News button
 	$('.new-event nav').removeClass('active')
 	$('.new-event nav').on('click', function () {

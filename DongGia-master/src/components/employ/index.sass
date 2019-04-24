@@ -4,6 +4,8 @@
 		text-align: center
 		.recruit-content
 			padding-bottom: 40px
+			width: 100%
+
 			h2
 				padding-top: 0
 				padding-bottom: 15px
@@ -28,15 +30,20 @@
 					font-size: 14px
 				@media (max-width: 565.98px)
 					font-size: 13px
-		img
-			box-shadow: 3px 4px 13px 1px rgba(0, 0, 0, 0.4)
-			border: 3px solid #d3ae63
+		.Module-180
+			.ModuleContent
+				img
+					box-shadow: 3px 4px 13px 1px rgba(0, 0, 0, 0.4)
+					border: 3px solid #d3ae63
+					max-width: none
+					@media (max-width: 991.98px)
+						height: 250px
 		@media (min-width: 992px)
 			display: flex
 			align-items: flex-start
+			.Module-179
+				width: 100%
 			.recruit-content
-				flex: 0 0 50%
-				max-width: 50%
 				display: flex
 				flex-direction: column
 				justify-content: center
@@ -59,6 +66,8 @@
 	padding-bottom: 50px
 	h2
 		padding-bottom: 35px
+	a
+		text-decoration: none
 	.step-box
 		text-align: center
 		margin: .5rem 0

@@ -2,8 +2,7 @@
 	padding-bottom: 60px
 	.module-faqs
 		background-color: #f5f5f5
-		padding: 1rem
-		margin: 0
+		margin: 1rem
 		h3
 			font-size: 16px
 			font-family: 'Montserrat', sans-serif
@@ -44,49 +43,47 @@
 						width: 100%
 						position: relative
 						box-shadow: 0 1px 0 0px rgba(0,0,0,.3)
-						span:not(.mdi)
-							font-family: 'Montserrat', sans-serif
-							font-size: 15px
-							font-weight: 600
-							color: rgb(71, 71, 71)
-							line-height: 2.067
-							padding: 20px 0
-							display: inline-flex
-							justify-content: flex-start
-							align-items: center
-							width: 100%
-						span.mdi
-							&:before
-								content: "\f419"
-								font-family: "Material Design Icons"
-								font-weight: 400
-								display: inline-block
-								top: 50%
-							&:after
-								content: "\f377"
-								font-family: "Material Design Icons"
-								font-weight: 400
-								display: none
-								top: 50%
+						font-family: 'Montserrat', sans-serif
+						font-size: 15px
+						font-weight: 600
+						color: rgb(71, 71, 71)
+						line-height: 2.067
+						padding: 20px 0
+						display: inline-flex
+						justify-content: flex-start
+						align-items: center
+						width: 100%
+					.mdi
+						&:before
+							content: "\f419"
+							font-family: "Material Design Icons"
+							font-weight: 400
+							display: inline-block
+							top: 50%
+							right: 0
+							position: absolute
+							transform: translateY(-50%)
+				&:last-child
+					.question
+						h4
+							box-shadow: none
 				&.active
 					.answer
 						display: block
 					.question
 						h4
-							span.mdi
-								&:before
-									display: none
-								&:after
-									display: inline-block
+							box-shadow: 0 1px 0 0px rgba(0,0,0,.3)
+						.mdi::before
+							content: "\f377"
 				&:hover
 					.question
 						&:before
 							box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3)
 							cursor: pointer
 				.answer
-					padding: 30px 25px
 					display: none
 					p
+						margin: 30px 45px
 						color: #666666
 						font-family: 'Montserrat', sans-serif
 						font-size: 15px
@@ -96,18 +93,6 @@
 						text-align: left
 						@media (max-width: 767.98px)
 							text-align: justify
-				&.active
-					.answer
-						display: block
-						transition: .5s all ease-in-out
-						p
-							padding-bottom: 20px
-					.question
-						box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3)
-			.non-line
-				.question
-					box-shadow: none
-					transition: .2s all ease-in-out
 	@media (min-width: 992px)
 		.module-faqs
-			padding: 60px 95px 60px 65px
+			margin: 60px 95px 60px 65px

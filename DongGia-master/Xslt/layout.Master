@@ -56,8 +56,8 @@
 								<portal:modulewrapper id="mdl136" runat="server" configuremoduleid="136" />
 								
 							</div>
-							<div class="main-menu">
-								<portal:modulewrapper id="mdl42" runat="server" configuremoduleid="42" />
+							<div class="category-list">
+								<portal:modulewrapper id="mdl175" runat="server" configuremoduleid="175" />
 							</div>
 						</div>
 						<div class="toggle-menu"><span class="mdi mdi-menu"></span></div>
