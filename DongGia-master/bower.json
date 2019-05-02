@@ -7,7 +7,6 @@
   ],
   "license": "MIT",
   "homepage": "https://github.com/sonvh2510/01.ToolBuildHTML.git",
-  "private": false,
   "ignore": [
     "**/.*",
     "node_modules",
