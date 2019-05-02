@@ -1,9 +1,8 @@
 .ability
 	background: url('../img/product/product_banner_bg.png') center center no-repeat
 	background-size: cover
+	padding-bottom: 60px
 	.container
-		h2
-			padding-bottom: 40px
 		.col-8
 			p
 				padding: 1rem
@@ -20,12 +19,45 @@
 				@media (max-width: 565.98px)
 					font-size: 13px
 		.col-4
-			padding-bottom: 60px
 			position: relative
 			.swiper-container
+				border: 1px solid grey
 				.swiper-wrapper
 					.swiper-slide
 						text-align: center
+						img
+							height: 470px
+			@media (max-width: 1199.98px)
+				.swiper-container
+					.swiper-wrapper
+						.swiper-slide
+							img
+								height: 400px
+			@media (max-width: 991.98px)
+				padding-bottom: 50px
+				.swiper-container
+					margin-left: 33%
+					margin-right: 33%
+					.swiper-wrapper
+						.swiper-slide
+							img
+								height: 400px
+			@media (max-width: 767.98px)
+				.swiper-container
+					margin-left: 30%
+					margin-right: 30%
+					.swiper-wrapper
+						.swiper-slide
+							img
+								height: 350px
+			@media (max-width: 575.98px)
+				.swiper-container
+					margin-right: 20%
+					margin-left: 20%
+					.swiper-wrapper
+						.swiper-slide
+							img
+								height: 320px
 			.swiper-button-next
 				transform: translateX(20%)
 				outline: none
@@ -205,9 +237,25 @@
 	padding-top: 60px
 	.container
 		position: relative
-		h2
+		h2.module-title
 			padding-top: 0
 			padding-bottom: 2px
+			padding-top: 0
+			text-align: center
+			font-size: 38px
+			font-weight: 600
+			line-height: 38px
+			letter-spacing: 0.95px
+			background-clip: text
+			-webkit-background-clip: text
+			color: transparent
+			background-image: linear-gradient(to right, #9d763d 0%, #d3ae63 100%)
+			@media (max-width: 991.98px)
+				font-size: 35px
+			@media (max-width: 767.98px)
+				font-size: 33px
+			@media (max-width: 575.98px)
+				font-size: 30px
 		.swiper-container
 			figure
 				width: 100%
@@ -267,11 +315,11 @@
 		@media (min-width: 768px)
 			.btn-group
 				.swiper-button-next
-					transform: translate(-27%,50%)
+					transform: translate(-5%,70%)
 					outline: none
 					right: 0
 					bottom: auto
-					top: 3%
+					top: 0%
 					left: auto
 					background-image: none
 					background: #ffffff
@@ -280,12 +328,12 @@
 						&:before
 							color: #000
 				.swiper-button-prev
-					transform: translate(-27%,50%)
+					transform: translate(-5%,70%)
 					outline: none
 					left: auto
 					background-image: none
 					bottom: auto
-					top: 3%
+					top: 0%
 					right: 6%
 					background: #ffffff
 					border-color: rgba(19, 28, 35, 0.1)
@@ -336,13 +384,13 @@
 								font-weight: 400
 								color: #ffffff
 								text-align: center
-								.fa-arrow-right
-									display: inline-block
-									width: 20px
-									height: 20px
-									font-style: normal
-									&:after
-										content: "\f061"
-										font-family: "Font Awesome 5 Free"
-										font-weight: 600
-										color: #ffffff
+							.fa-arrow-right
+								display: inline-block
+								width: 100%
+								font-style: normal
+								&:after
+									margin-left: 10px
+									content: "\f061"
+									font-family: "Font Awesome 5 Free"
+									font-weight: 600
+									color: #ffffff
