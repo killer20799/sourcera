@@ -24,7 +24,11 @@
 				justify-content: center
 				display: flex
 				padding-top: 60px
-				button
+				a
+					display: flex
+					justify-content: center
+					align-items: center
+					text-decoration: none
 					width: 185px
 					border-radius: 5px
 					border: 1px solid rgb(163, 126, 44)
@@ -36,6 +40,9 @@
 					font-weight: 400
 					line-height: 20px
 					text-transform: uppercase
+					&:hover
+						background: rgb(163, 126, 44)
+						color: #ffffff
 		.module-img
 			display: flex
 			justify-content: center
@@ -59,7 +66,7 @@
 				max-width: 50%
 				text-align: right
 				padding-bottom: 0
-				padding-left: 48px
+				padding-left: 5%
 				p
 					font-size: 15px
 					text-align: right
@@ -75,11 +82,11 @@
 	@media (min-width: 1200px)
 		.introduce
 			.moduleContent
-				padding-left: 65px
+				padding-left: 10%
 	@media (min-width: 1400px)
 		.introduce
 			.moduleContent
-				padding-left: 9rem
+				padding-left: 15%
 				padding-right: 40px
 .module-seek
 	background: url('../img/about/about_banner_bg.png') center center no-repeat
@@ -103,12 +110,6 @@
 		margin-top: 1rem
 		padding: 0
 		.module-Content
-			p
-				color: #666666
-				font-family: 'Montserrat', sans-serif
-				font-size: 15px
-				font-weight: 400
-				line-height: 23px
 			h3
 				position: relative
 				padding: 20px 0
@@ -127,7 +128,7 @@
 					position: absolute
 					bottom: 0
 					left: 0
-			h4
+			p
 				padding-bottom: 30px
 				font-family: 'Montserrat', sans-serif
 				font-size: 24px
