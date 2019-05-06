@@ -12,13 +12,8 @@ html(lang="en")
 		title #{title}
 
 	body(class=bodyClass)
-		block header
-			include ../components/_header/index.pug
 		main
-			include ../components/banner/index.pug
 			block main
-		block footer
-			include ../components/_footer/index.pug
 		script.
 			(function(d, s, id) {
 			var js, fjs = d.getElementsByTagName(s)[0];
