@@ -37,6 +37,15 @@
 				<xsl:value-of select="BriefContent" disable-output-escaping="yes"></xsl:value-of>
 				<div class="readmore">
 					<a>
+						<xsl:attribute name="href">
+							<xsl:value-of select="Url"></xsl:value-of>
+						</xsl:attribute>
+						<xsl:attribute name="target">
+							<xsl:value-of select="Target"></xsl:value-of>
+						</xsl:attribute>
+						<xsl:attribute name="title">
+							<xsl:value-of select="Title"></xsl:value-of>
+						</xsl:attribute>
 						<xsl:value-of select="SubTitle" disable-output-escaping="yes"></xsl:value-of>
 					</a>
 				</div>

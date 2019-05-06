@@ -29,7 +29,6 @@
 			<xsl:text disable-output-escaping="yes">&lt;div class="col"&gt;</xsl:text>
 		</xsl:if>
 		<xsl:if test="position()=6">
-			<xsl:text disable-output-escaping="yes">&lt;div class="row"&gt;</xsl:text>
 			<xsl:text disable-output-escaping="yes">&lt;div class="col-sm-6 col-md-4"&gt;</xsl:text>
 			<xsl:text disable-output-escaping="yes">&lt;div class="col"&gt;</xsl:text>
 		</xsl:if>
@@ -100,7 +99,6 @@
 		<xsl:if test="position()=5">
 			<xsl:text disable-output-escaping="yes">&lt;/div&gt;</xsl:text>
 			<xsl:text disable-output-escaping="yes">&lt;/div&gt;</xsl:text>
-			<xsl:text disable-output-escaping="yes">&lt;/div&gt;</xsl:text>
 		</xsl:if>
 		<xsl:if test="position()=6">
 			<xsl:text disable-output-escaping="yes">&lt;/div&gt;</xsl:text>
@@ -111,7 +109,6 @@
 			<xsl:text disable-output-escaping="yes">&lt;/div&gt;</xsl:text>
 		</xsl:if>
 		<xsl:if test="position()=8">
-			<xsl:text disable-output-escaping="yes">&lt;/div&gt;</xsl:text>
 			<xsl:text disable-output-escaping="yes">&lt;/div&gt;</xsl:text>
 			<xsl:text disable-output-escaping="yes">&lt;/div&gt;</xsl:text>
 			<xsl:text disable-output-escaping="yes">&lt;/div&gt;</xsl:text>
