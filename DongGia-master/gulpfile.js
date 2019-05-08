@@ -86,7 +86,7 @@ gulp.task('globalCss', function () {
 	return gulp.src(glob.globalCss, {
 		allowEmpty: true,
 	})
-		.pipe(concat('global.min.css'))
+		.pipe(concat('mun-e-magazine.global.css'))
 		.pipe(postcss([
 			prefixer({
 				browsers: ['last 4 version', "IE 10"],
@@ -116,7 +116,8 @@ gulp.task('css', function () {
 			cssDeclarationSorter({ order: 'smacss' })
 		]))
 		.pipe(rename({
-			suffix: '.min'
+			suffix: '.main',
+			basename: 'mun-e-magazine'
 		}))
 		.pipe(srcmap.write('.'))
 		.pipe(gulp.dest('./dist/css'))

@@ -271,7 +271,7 @@ template {
 	display: none !important;
 }
 
-.container {
+.bs4-container {
 	width: 100%;
 	padding-right: 10px;
 	padding-left: 10px;
@@ -280,23 +280,23 @@ template {
 }
 
 @media (min-width: 992px) {
-	.container {
+	.bs4-container {
 		max-width: 960px;
 	}
 }
 
 @media (min-width: 1200px) {
-	.container {
+	.bs4-container {
 		max-width: 1140px;
 	}
 }
 @media (min-width: 1440px) {
-	.container {
+	.bs4-container {
 		max-width: 1260px;
 	}
 }
 
-.container-fluid {
+.bs4-container-fluid {
 	width: 100%;
 	padding-right: 10px;
 	padding-left: 10px;
@@ -304,7 +304,7 @@ template {
 	margin-left: auto;
 }
 
-.row {
+.bs4-row {
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-wrap: wrap;
@@ -318,8 +318,8 @@ template {
 	margin-left: 0;
 }
 
-.no-gutters>.col,
-.no-gutters>[class*="col-"]{
+.no-gutters>.bs4-col,
+.no-gutters>[class*="bs4-col-"]{
 	padding-right: 0;
 	padding-left: 0;
 }
