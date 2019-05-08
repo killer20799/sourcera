@@ -5,10 +5,9 @@
 
 	<xsl:template match="/">
 		<div class="Module">
-			
-				<ul>
-					<xsl:apply-templates select="/ZoneList/Zone"></xsl:apply-templates>
-				</ul>
+			<ul>
+				<xsl:apply-templates select="/ZoneList/Zone"></xsl:apply-templates>
+			</ul>
 		</div>
 	</xsl:template>
 

@@ -4,13 +4,14 @@
 	<xsl:output method="html" indent="yes" />
 
 	<xsl:template match="/">
+	
 		<div class="btn-group">
 			<div class="swiper-button-next"><i class="fa-chevron-right"></i></div>
 			<div class="swiper-button-prev"><i class="fa-chevron-left"></i></div>
 		</div>
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
-				<xsl:apply-templates select="News"></xsl:apply-templates>
+				<xsl:apply-templates select="/NewsList/News"></xsl:apply-templates>
 			</div>
 		</div>
 	</xsl:template>
@@ -28,18 +29,19 @@
 						<xsl:value-of select="Title"></xsl:value-of>
 					</xsl:attribute>
 					<figure>
-						<img>
-							<xsl:attribute name="src">
-								<xsl:value-of select="ImageUrl"></xsl:value-of>
-							</xsl:attribute>
-							<xsl:attribute name="alt">
-								<xsl:value-of select="Title"></xsl:value-of>
-							</xsl:attribute>
-						</img>
+						<div class="boximg">
+							<img>
+								<xsl:attribute name="src">
+									<xsl:value-of select="ImageUrl"></xsl:value-of>
+								</xsl:attribute>
+								<xsl:attribute name="alt">
+									<xsl:value-of select="Title"></xsl:value-of>
+								</xsl:attribute>
+							</img>
+						</div>
 						<figcaption>
 							<p>
-								<strong>
-									<xsl:value-of select="CreatedDate" disable-output-escaping="yes"></xsl:value-of>
+								<strong>[<xsl:value-of select="CreatedDate" disable-output-escaping="yes"></xsl:value-of>]
 								</strong>
 								<xsl:value-of select="BriefContent" disable-output-escaping="yes"></xsl:value-of>
 							</p>

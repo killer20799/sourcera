@@ -6,7 +6,7 @@
 	<xsl:template match="/">
 		<div class="row">
 			<div class="Module">
-				<h2 class="moduleTitle">Thư viện</h2>
+				<h2 class="moduleTitle"><xsl:value-of select="/ZoneList/ModuleTitle" disable-output-escaping="yes"></xsl:value-of></h2>
 				<nav>
 					<xsl:apply-templates select="/ZoneList/Zone"></xsl:apply-templates>
 				</nav>

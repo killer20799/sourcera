@@ -4,14 +4,10 @@
 	<xsl:output method="html" indent="yes" />
 
 	<xsl:template match="/">
-		<div class="row">
-			<div class="Module">
-				<h2 class="moduleTitle">Tin tức - Sự kiện</h2>
-				<nav>
-					<xsl:apply-templates select="/ZoneList/Zone"></xsl:apply-templates>
-				</nav>
-			</div>
-		</div>
+		<h2 class="moduleTitle"><xsl:value-of select="/ZoneList/ModuleTitle" disable-output-escaping="yes"></xsl:value-of></h2>
+		<nav>
+			<xsl:apply-templates select="/ZoneList/Zone"></xsl:apply-templates>
+		</nav>
 	</xsl:template>
 
 	<xsl:template match="Zone">

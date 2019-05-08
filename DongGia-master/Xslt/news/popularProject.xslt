@@ -14,7 +14,7 @@
 				<div class="swiper-container">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
-							<xsl:apply-templates select="News"></xsl:apply-templates>
+							<xsl:apply-templates select="/NewsList/News"></xsl:apply-templates>
 						</div>
 					</div>
 				</div>
