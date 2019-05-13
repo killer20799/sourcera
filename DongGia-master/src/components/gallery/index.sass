@@ -64,7 +64,7 @@
 	.container
 		.row
 			margin: 0
-			.item
+			a
 				figure
 					position: relative
 					padding-top: 15px
@@ -77,12 +77,12 @@
 						left: 50%
 						transform: translate(-50%, -50%)
 						z-index: 1
-					a
+					.imgbox
 						img
 							width: 100%
 							filter: brightness(0.5)
 					&:hover
-						a
+						.imgbox
 							img
 								filter: brightness(1)
 						.popup-icon
@@ -93,87 +93,29 @@
 					padding-right: 15px
 					padding-left: 15px
 				.col
-					.item
+					a
 						figure
 							.imgbox
-								a
-									img
-										height: 590px
+								img
+									height: 590px
 							.popup-icon
 								img
 									height: auto
 				.resized
-					.item
+					a
 						figure
 							.imgbox
-								a
-									img
-										height: 280px
+								img
+									height: 280px
 							.popup-icon
 								img
 									width: 80%
 				.col-md-6
-					.item
+					a
 						figure
 							.imgbox
-								a
-									img
-										height: 280px
+								img
+									height: 280px
 							.popup-icon
 								img
 									width: 80%
-.lg-outer
-	.lg-toolbar
-		.lg-download
-			&:after
-				content: "\f791"
-				font-family: "Material Design Icons"
-				font-weight: 400
-		.lg-close
-			&:after
-				content: "\f206"
-				font-family: "Material Design Icons"
-				font-weight: 400
-	.lg-actions
-		.lg-prev
-			&:after
-				content: "\fb0e"
-				font-family: "Material Design Icons"
-				font-weight: 400
-		.lg-next
-			&:before
-				content: "\fb10"
-				font-family: "Material Design Icons"
-				font-weight: 400
-
-
-	// .container
-	// 	display: flex
-	// 	justify-content: center
-	// 	.list-item
-	// 		padding: 0
-	// 		display: flex
-	// 		text-align: center
-	// 		flex-direction: column
-	// 		.item
-	// 			position: relative
-	// 			padding: 15px
-	// 			a
-	// 				.img-filler
-	// 					width: 100%
-	// 					filter: brightness(0.5)
-	// 				.gallery-poster
-	// 						position: absolute
-	// 						top: 50%
-	// 						left: 50%
-	// 						transform: translate(-50%, -50%)
-	// 						z-index: 1
-	// 			&:hover
-	// 				a
-	// 					.img-filler
-	// 						filter: none
-	// 					.gallery-poster
-	// 						display: none
-	// 	@media (min-width: 992px)
-	// 		.list-item
-	// 			flex-direction: column

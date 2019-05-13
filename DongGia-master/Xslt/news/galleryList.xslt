@@ -43,28 +43,26 @@
 		</xsl:if>
 
 
-		<div class="item">
+		<a data-fancybox="gallery" href="">
+			<xsl:attribute name="href">
+				<xsl:value-of select="ImageUrl"></xsl:value-of>
+			</xsl:attribute>
 			<figure>
 				<div class="imgbox">
-					<a>
-						<xsl:attribute name="href">
-							<xsl:value-of select="ImageUrl"></xsl:value-of>
-						</xsl:attribute>
-						<img>
+					<img>
 						<xsl:attribute name="src">
 							<xsl:value-of select="ImageUrl"></xsl:value-of>
 						</xsl:attribute>
 						<xsl:attribute name="alt">
 							<xsl:value-of select="Title"></xsl:value-of>
 						</xsl:attribute>
-						</img>
-					</a>
+					</img>
 				</div>
 				<div class="popup-icon">
 					<img src="/Data/Sites/1/skins/default/img/gallery/popup/popup_icon_L.png" />
 				</div>
 			</figure>
-		</div>
+		</a>
 
 		<xsl:if test="position() =1 ">
 			<xsl:text disable-output-escaping="yes">&lt;/div&gt;</xsl:text>

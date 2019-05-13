@@ -73,16 +73,32 @@ section.project-video
 		h2.moduleTitle Video
 		.row
 			figure
-				img(src="../img/project/project_banner_1.png", alt="")
+				.boximg
+					img(src="./img/project/project_banner_1.png", alt="")
 				figcaption
-					img(src="../img/project/button_1.png", alt="")
+					img(src="./img/project/button_1.png", alt="")
 section.project-photos
 	.container
 		h2.moduleTitle Hình ảnh dự án
 		.row
-			- for (x=1; x < 7; x++)
-				.col
-					img(src="../img/project/project_client_"+x+".png", alt="")
+			.item
+				a(data-fancybox="gallery" href="./img/project/project_client_1.png")
+					img(src="./img/project/project_client_1.png", alt="")
+			.item
+				a(data-fancybox="gallery" href="./img/project/project_client_1.png")
+					img(src="./img/project/project_client_1.png", alt="")
+			.item
+				a(data-fancybox="gallery" href="./img/project/project_client_1.png")
+					img(src="./img/project/project_client_1.png", alt="")
+			.item
+				a(data-fancybox="gallery" href="./img/project/project_client_1.png")
+					img(src="./img/project/project_client_1.png", alt="")
+			.item
+				a(data-fancybox="gallery" href="./img/project/project_client_1.png")
+					img(src="./img/project/project_client_1.png", alt="")
+			.item
+				a(data-fancybox="gallery" href="./img/project/project_client_1.png")
+					img(src="./img/project/project_client_1.png", alt="")
 section.other-project
 	.container
 		h2.moduleTitle Dự án đã thực hiện

@@ -35,7 +35,7 @@
 					<figcaption>
 						<p>
 							<strong>
-								[<xsl:value-of select="BriefContent" disable-output-escaping="yes"></xsl:value-of>]
+								[<xsl:value-of select="CreatedDate" disable-output-escaping="yes"></xsl:value-of>]
 							</strong>
 							<xsl:value-of select="BriefContent" disable-output-escaping="yes"></xsl:value-of>
 						</p>

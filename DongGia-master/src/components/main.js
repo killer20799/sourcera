@@ -309,5 +309,4 @@ $(document).ready(function () {
 			},
 		},
 	})
-	$('.gallery .item .imgbox').lightGallery();
 });

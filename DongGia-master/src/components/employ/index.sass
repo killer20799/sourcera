@@ -328,12 +328,12 @@
 				line-height: 30px
 		.sign-in-button
 			display: flex
-			width: 100%
-			justify-content: center
-			align-items: center
-			padding: 0
-			padding-bottom: 60px
+			justify-content: flex-start
 			a
+				display: inline-block
+				text-decoration: none
+				padding: 0
+				padding-bottom: 60px
 				border-radius: 8px
 				background-color: #685c53
 				background-image: linear-gradient(to right, #9d763d 0%, #d3ae63 100%)
@@ -345,8 +345,8 @@
 				line-height: 20px
 				text-transform: uppercase
 				letter-spacing: 0.75px
-			@media (min-width: 992px)
-				justify-content: flex-start
+			@media (max-width: 575.98px)
+				justify-content: center
 .other
 	position: relative
 	padding-bottom: 60px
@@ -375,6 +375,8 @@
 					padding-top: .5rem
 					background-color: #f5f5f5
 					z-index: 1
+					@media (max-width: 575.98px)
+						text-align: center
 					h3
 						color: #474747
 						font-family: 'Montserrat', sans-serif
