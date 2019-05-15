@@ -19,7 +19,9 @@
 	/>
 <portal:NewsDisplaySettings runat="server" 
 	ShowAttribute="true"
-	ShowSubTitle="true"
+	ShowSubtitle="true"
+	ShowAttachment="true"
+	ShowRelatedNews="true"
 	/>
 <portal:SharedFilesDisplaySettings runat="server" 
 	ShowFolder="false"

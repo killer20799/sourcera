@@ -236,157 +236,236 @@
 							padding-left: 15px
 
 .jobs
-	h2
-		color: #474747
-		font-family: 'Montserrat', sans-serif
-		font-size: 38px
-		font-weight: 600
-		line-height: 40px
-		padding-bottom: 40px
-		padding-top: 60px
-		text-align: center
-		@media (max-width: 991.98px)
-			font-size: 35px
-		@media (max-width: 767.98px)
-			font-size: 33px
-		@media (max-width: 575.98px)
-			font-size: 30px
-	.col-6
-		width: 100%
-		padding: 0 10px
-		padding-bottom: 10px
-		.detail
-			border-radius: 5px
-			background-color: #f5f5f5
-			width: 100%
-			padding: 1rem
-			h3
-				color: #333333
-				font-family: 'Montserrat', sans-serif
-				font-size: 18px
-				font-weight: 600
-				line-height: 30px
-				position: relative
-				&:before
-					content: ""
-					display: inline-block
-					width: 60px
-					height: 1px
-					background-color: #ffffff
-					background-image: linear-gradient(to right, #9d763d 0%, #d3ae63 100%)
-					position: absolute
-					bottom: 0
-					left: 0
-			ul
-				list-style-type: none
-				padding: 0
-				li
-					p
+	.container
+		h2
+			color: #474747
+			font-family: 'Montserrat', sans-serif
+			font-size: 38px
+			font-weight: 600
+			line-height: 40px
+			padding-bottom: 40px
+			padding-top: 0
+			text-align: left
+			@media (max-width: 991.98px)
+				font-size: 35px
+			@media (max-width: 767.98px)
+				font-size: 33px
+			@media (max-width: 575.98px)
+				font-size: 30px
+		.row
+			.col-6
+				width: 100%
+				padding: 0 10px
+				padding-bottom: 10px
+				.detail
+					border-radius: 5px
+					background-color: #f5f5f5
+					width: 100%
+					padding: 1rem
+					height: 100%
+					h3
+						color: #333333
+						font-family: 'Montserrat', sans-serif
+						font-size: 18px
+						font-weight: 600
+						line-height: 30px
+						position: relative
+						&:before
+							content: ""
+							display: inline-block
+							width: 60px
+							height: 1px
+							background-color: #ffffff
+							background-image: linear-gradient(to right, #9d763d 0%, #d3ae63 100%)
+							position: absolute
+							bottom: 0
+							left: 0
+					ul
+						list-style-type: none
+						padding: 0
+						li
+							p
+								color: #333333
+								font-family: 'Montserrat', sans-serif
+								font-size: 14px
+								font-weight: 400
+								line-height: 30px
+								padding: .2rem 0
+								display: flex
+								align-items: center
+								em
+									font-size: 20px
+									padding-right: 5px
+									font-style: normal
+									@media (max-width: 991.98px)
+										padding-right: 20px
+				&:nth-child(1)
+					.detail
+						ul
+							li
+								&:nth-child(1)
+									p
+										&:nth-child(1)
+											em
+												&:before
+													font-family: "Material Design Icons"
+													content: "\f009"
+													font-weight: 400
+										&:nth-child(2)
+											em
+												&:before
+													font-family: "Material Design Icons"
+													font-weight: 400
+													content: "\f4cf"
+										&:nth-child(3)
+											em
+												&:before
+													font-family: "Material Design Icons"
+													font-weight: 400
+													content: "\f474"
+								&:nth-child(2)
+									p
+										&:nth-child(1)
+											em
+												&:before
+													content: "\f0d6"
+													font-family: "Material Design Icons"
+													font-weight: 400
+										&:nth-child(3)
+											em
+												&:before
+													display: inline-block
+													font-family: "Material Design Icons"
+													font-size: inherit
+													text-rendering: auto
+													line-height: 1
+													-webkit-font-smoothing: antialiased
+													-moz-osx-font-smoothing: grayscale
+													content: "\f109"
+										&:nth-child(2)
+											em
+												display: flex
+												&:before
+													content: "\f155"
+													font-family: "Font Awesome 5 Free"
+													font-weight: 600
+													display: inline-flex
+													width: 18px
+													height: 18px
+													margin-right: 2px
+													font-size: 10px
+													text-align: center
+													border-radius: 100%
+													color: #fff
+													background: #000
+													justify-content: center
+													align-items: center
+				&:nth-child(2)
+					.detail
+						ul
+							li
+								&:nth-child(1)
+									p
+										&:nth-child(1)
+											em
+												&:before
+													content: "\f100"
+													font-family: "Material Design Icons"
+													font-weight: 400
+										&:nth-child(2)
+											em
+												&:before
+													content: "\f474"
+													font-family: "Material Design Icons"
+													font-weight: 400
+										&:nth-child(3)
+											em
+												&:before
+													content: "\f01d"
+													font-family: "Material Design Icons"
+													font-weight: 400
+								&:nth-child(2)
+									p
+										&:nth-child(1)
+											em
+												&:before
+													content: "\f7b0"
+													font-family: "Material Design Icons"
+													font-weight: 400
+										&:nth-child(2)
+											em
+												&:before
+													content: "\f585"
+													font-family: "Material Design Icons"
+													font-weight: 400
+										&:nth-child(3)
+											em
+												&:before
+													font-family: "Material Design Icons"
+													font-weight: 400
+													content: "\f1b3"
+				@media (min-width: 512px)
+					ul
+						display: flex
+						li
+							flex: 0 0 50%
+							max-width: 50%
+				@media (min-width: 768px)
+					flex: 0 0 50%
+					max-width: 50%
+					ul
+						display: block
+						li
+							flex: 0 0 100%
+							max-width: 100%
+				@media (min-width: 992px)
+					ul
+						display: flex
+						li
+							flex: 0 0 50%
+							max-width: 50%
+			.col-12
+				padding-right: 10px
+				width: 100%
+				padding-left: 10px
+				h3
+					color: #333333
+					font-family: 'Montserrat', sans-serif
+					font-size: 18px
+					font-weight: 600
+					line-height: 30px
+				ul
+					padding-bottom: 20px
+					padding-top: 10px
+					padding-left: 17px
+					li
+						padding: 5px 0
 						color: #333333
 						font-family: 'Montserrat', sans-serif
 						font-size: 14px
 						font-weight: 400
 						line-height: 30px
-						padding: .2rem 0
-						display: flex
-						align-items: center
-						i
-							font-size: 20px
-							padding-right: 5px
-							font-style: normal
-						.mdi-star-circle
-							font-family: "Material Design Icons"
-							font-weight: 400
-							content: "\f4cf"
-						.mdi-school
-							font-family: "Material Design Icons"
-							font-weight: 400
-							content: "\f474"
-						.mdi-camera-timer
-							display: inline-block
-							font-family: "Material Design Icons"
-							font-size: inherit
-							text-rendering: auto
-							line-height: 1
-							-webkit-font-smoothing: antialiased
-							-moz-osx-font-smoothing: grayscale
-							content: "\f109"
-						.salary
-							display: flex
-							&:before
-								content: "\f155"
-								font-family: "Font Awesome 5 Free"
-								font-weight: 600
-								display: inline-flex
-								width: 18px
-								height: 18px
-								margin-right: 2px
-								font-size: 10px
-								text-align: center
-								border-radius: 100%
-								color: #fff
-								background: #000
-								justify-content: center
-								align-items: center
-		@media (min-width: 512px)
-			ul
+			.sign-in-button
 				display: flex
-				li
-					flex: 0 0 50%
-					max-width: 50%
-		@media (min-width: 768px)
-			flex: 0 0 50%
-			max-width: 50%
-			ul
-				display: block
-		@media (min-width: 992px)
-			ul
-				display: flex
-				li
-					flex: 0 0 50%
-					max-width: 50%
-	.col-12
-		padding-right: 10px
-		width: 100%
-		padding-left: 10px
-		h3
-			color: #333333
-			font-family: 'Montserrat', sans-serif
-			font-size: 18px
-			font-weight: 600
-			line-height: 30px
-		ul
-			padding-bottom: 20px
-			padding-top: 10px
-			padding-left: 17px
-			li
-				padding: 5px 0
-				color: #333333
-				font-family: 'Montserrat', sans-serif
-				font-size: 14px
-				font-weight: 400
-				line-height: 30px
-		.sign-in-button
-			display: flex
-			justify-content: flex-start
-			a
-				display: inline-block
-				text-decoration: none
-				padding: 0
-				padding-bottom: 60px
-				border-radius: 8px
-				background-color: #685c53
-				background-image: linear-gradient(to right, #9d763d 0%, #d3ae63 100%)
-				padding: .5rem 1rem
-				color: #f5f2e9
-				font-family: 'Roboto', sans-serif
-				font-size: 15px
-				font-weight: 500
-				line-height: 20px
-				text-transform: uppercase
-				letter-spacing: 0.75px
-			@media (max-width: 575.98px)
-				justify-content: center
+				justify-content: flex-start
+				a
+					display: inline-block
+					text-decoration: none
+					padding: 0
+					padding-bottom: 60px
+					border-radius: 8px
+					background-color: #685c53
+					background-image: linear-gradient(to right, #9d763d 0%, #d3ae63 100%)
+					padding: .5rem 1rem
+					color: #f5f2e9
+					font-family: 'Roboto', sans-serif
+					font-size: 15px
+					font-weight: 500
+					line-height: 20px
+					text-transform: uppercase
+					letter-spacing: 0.75px
+				@media (max-width: 575.98px)
+					justify-content: center
 .other
 	position: relative
 	padding-bottom: 60px
@@ -425,47 +504,52 @@
 						line-height: 40px
 					.box-content
 						padding: 0
-						.salary, .education, .location
+						p
 							color: #474747
 							font-family: 'Montserrat', sans-serif
 							font-size: 15px
 							font-weight: 400
 							line-height: 30px
-						.location
-							&:before
-								content: "\f3c5"
-								font-family: "Font Awesome 5 Free"
-								font-weight: 600
-								display: inline-block
-								width: 25px
-								height: 25px
-								text-align: center
-						.education
-							&:before
-								content: "\f19d"
-								font-family: "Font Awesome 5 Free"
-								font-weight: 600
-								display: inline-block
-								width: 25px
-								height: 25px
-								text-align: center
-						.salary
-							&:before
-								content: "\f155"
-								font-family: "Font Awesome 5 Free"
-								font-weight: 600
-								display: inline-flex
-								width: 18px
-								height: 18px
-								margin: 5px
-								margin-left: 3px
-								font-size: 10px
-								text-align: center
-								border-radius: 100%
-								color: #fff
-								background: #000
-								justify-content: center
-								align-items: center
+							em
+								font-style: normal
+							&:nth-child(1)
+								em
+									&:before
+										content: "\f3c5"
+										font-family: "Font Awesome 5 Free"
+										font-weight: 600
+										display: inline-block
+										width: 25px
+										height: 25px
+										text-align: center
+							&:nth-child(2)
+								em
+									&:before
+										content: "\f19d"
+										font-family: "Font Awesome 5 Free"
+										font-weight: 600
+										display: inline-block
+										width: 25px
+										height: 25px
+										text-align: center
+							&:nth-child(3)
+								em
+									&:before
+										content: "\f155"
+										font-family: "Font Awesome 5 Free"
+										font-weight: 600
+										display: inline-flex
+										width: 18px
+										height: 18px
+										margin: 5px
+										margin-left: 3px
+										font-size: 10px
+										text-align: center
+										border-radius: 100%
+										color: #fff
+										background: #000
+										justify-content: center
+										align-items: center
 		.swiper-button-next
 			background-image: none
 			width: 20px
