@@ -4,7 +4,7 @@
 		img
 			width: 100%
 			max-height: 500px
-	.breadcrumb
+	.bread-crumb
 		position: absolute
 		bottom: 0
 		left: 0
@@ -22,7 +22,7 @@
 		@media (max-width: 575.98px)
 			height: 25px
 			font-size: 13px
-		ul
+		ol
 			padding: 0
 			margin: 0
 			list-style-type: none
@@ -37,13 +37,16 @@
 						content: "\f2dc"
 						font-family: "Material Design Icons"
 						font-weight: 400
-				&:not(.mdi-home):before
+				&:not(:nth-child(1)):before
 					padding: 0 10px
 					content: "\f13e"
 					font-family: "Material Design Icons"
 					font-weight: 400
-				&:not(.mdi-home)
+				&:not(:nth-child(1))
 					a
 						font-size: 14px
 						&:before
 							display: none
+				&:nth-child(1)
+					span
+						display: none

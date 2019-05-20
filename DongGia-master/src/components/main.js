@@ -12,7 +12,7 @@ $(document).ready(function () {
 			$('header').removeClass('fixed')
 		}
 	})
-
+	$('footer .col-lg-3 .ModuleContent .frm-btnwrap .frm-btn input').attr('value', 'Đăng ký');
 	// Header Language
 	$('header .language .current').on('click', function () {
 		$('header .language .dropdown').toggleClass('active')
@@ -173,7 +173,7 @@ $(document).ready(function () {
 		slidesPerView: 3,
 		loop: true,
 		speed: 1200,
-		spaceBetween: 22,
+		spaceBetween: 30,
 		navigation: {
 			nextEl: '.otherNews .btn-group .swiper-button-next',
 			prevEl: '.otherNews .btn-group .swiper-button-prev',

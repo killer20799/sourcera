@@ -56,38 +56,27 @@
 	</xsl:template>
 	<xsl:template match="News" mode="News2">
 		<div class="step-box">
-			<a>
-				<xsl:attribute name="href">
-					<xsl:value-of select="Url"></xsl:value-of>
-				</xsl:attribute>
-				<xsl:attribute name="target">
-					<xsl:value-of select="Target"></xsl:value-of>
-				</xsl:attribute>
-				<xsl:attribute name="title">
-					<xsl:value-of select="Title"></xsl:value-of>
-				</xsl:attribute>
-				<figure>
-					<img>
-						<xsl:attribute name="src">
-							<xsl:value-of select="ImageUrl"></xsl:value-of>
-						</xsl:attribute>
-						<xsl:attribute name="alt">
-							<xsl:value-of select="Title"></xsl:value-of>
-						</xsl:attribute>
-					</img>
-					<figcaption>
-						<h3>
-							<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
-						</h3>
-						<p>
-							<xsl:value-of select="BriefContent" disable-output-escaping="yes"></xsl:value-of>
-						</p>
-						<div class="step">
-							<xsl:value-of select="SubTitle" disable-output-escaping="yes"></xsl:value-of>
-						</div>
-					</figcaption>
-				</figure>
-			</a>
+			<figure>
+				<img>
+					<xsl:attribute name="src">
+						<xsl:value-of select="ImageUrl"></xsl:value-of>
+					</xsl:attribute>
+					<xsl:attribute name="alt">
+						<xsl:value-of select="Title"></xsl:value-of>
+					</xsl:attribute>
+				</img>
+				<figcaption>
+					<h3>
+						<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+					</h3>
+					<p>
+						<xsl:value-of select="BriefContent" disable-output-escaping="yes"></xsl:value-of>
+					</p>
+					<div class="step">
+						<xsl:value-of select="SubTitle" disable-output-escaping="yes"></xsl:value-of>
+					</div>
+				</figcaption>
+			</figure>
 		</div>
 	</xsl:template>
 </xsl:stylesheet>

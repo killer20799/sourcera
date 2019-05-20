@@ -98,7 +98,9 @@
 						<div class="col-lg col-sm-6 nav">
 							<portal:modulewrapper id="md148" runat="server" configuremoduleid="148" />
 						</div>
-						<div class="col-lg-3 col-sm-6"></div>
+						<div class="col-lg-3 col-sm-6">
+							<portal:modulewrapper id="md225" runat="server" configuremoduleid="225" />
+						</div>
 					</div>
 					<div class="row copyright">
 						<div class="col">
@@ -181,6 +183,30 @@
 		AddToCombinedScript="true" />
 	<portal:SkinFolderScript ID="SkinFolderScript2" runat="server" ScriptFileName="js/main.min.js"
 		AddToCombinedScript="true" />
+	<script>
+		(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.0&autoLogAppEvents=1';
+		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+		window.twttr = (function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0],
+		t = window.twttr || {};
+		if (d.getElementById(id)) return t;
+		js = d.createElement(s);
+		js.id = id;
+		js.src = "https://platform.twitter.com/widgets.js";
+		fjs.parentNode.insertBefore(js, fjs);
+		t._e = [];
+		t.ready = function(f) {
+		t._e.push(f);
+		};
+		return t;
+		}(document, "script", "twitter-wjs"));
+	</script>
+	<script src="https://sp.zalo.me/plugins/sdk.js"></script>
 </body>
 
 </html>
